@@ -3,32 +3,21 @@
 controllers/frontController.js notes:
 
 //--------------------------------------------
-
 //use below PATH when testing with "npm start"
-
 //const PATH = "./";
-
 //
-
 //use BELOW PATH when building with "npm run pack"
-
 //const PATH = "resources/app.asar/";
-
 //--------------------------------------------
 
 
 app.js notes:
 
 //--------------------------------------------
-
 //USE "" PATH when testing with "npm start"
-
 //const PATH = "";
-
 //use BELOW PATH when building with "npm run pack"
-
 //const PATH = "resources/app.asar/";
-
 //--------------------------------------------
 
 
