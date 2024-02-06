@@ -1,0 +1,93 @@
+<html lang="en">
+    <%- include('./partials/frontHead.ejs')  %> 
+<body>
+    <div class="wrap">
+        <!-- Header -->
+        <%- include('./partials/v1header.ejs')  %> 
+      
+        <div id="topPageHeader">AudioVisual Playground</div>
+      
+        <!-- Pedal Shuffler -->
+        <div id="pedalTable">
+            <% for (let p = 0; p < allPedals.length; p++) {%>
+              <a href="<%= allPedals[p].link %>">
+                  <img src="<%= allPedals[p].image %>" class="pedalList" data-pedal-id="<%= allPedals[p].id %>">
+              </a>
+            <%}%>
+          <div id="randomDivMobile"></div>  
+        </div>
+      
+        <!-- Random button -->
+        <div id="randomDiv" class="randomAnimation">
+          <div id="randomWrap">
+            <img src="../images/v1/randombtn.svg" id="randombtn">
+          </div>
+        </div>
+    </div>
+    
+    <!-- All Pedals in Grid view -->
+    <div id="gridHeader">ALL OPs + Feat. Artists</div>
+    <div class="grid-container">
+
+    <% for (var i = 0; i < allPedals.length; i++) {%>
+        <a class="list" href="<%= allPedals[i].link %>">
+        <div class="pedal-grid">
+            <img src= <%= allPedals[i].image %> />
+            <h3 class="artistName"><%= allPedals[i].artist %></h3> 
+            <div class="pedal-name">
+                <p class="label">ONOMATOPOEIA</p>
+                <h2><%= allPedals[i].onomoname %></h2>
+                <p class="label">FEATURED PEDAL</p>
+                <h2><%= allPedals[i].pedalFull %></h2>
+                <p class="label">MUSIC FEAT.</p>
+                <h2><%= allPedals[i].artist %></h2>
+            </div>
+        </div>
+        </a>
+    <% } %>
+    </div>
+
+    <%- include('./partials/v1footer.ejs')  %> 
+
+    <script> 
+    const languageEn = <%- JSON.stringify(language[0]) %> ;
+    const languageJp = <%- JSON.stringify(language[1]) %> ;
+    const nav = <%- JSON.stringify(nav) %> ;
+
+    // ===== Top page Pedal Shuffle =====
+    function randomize() {
+    var allBanners = $('#pedalTable img');
+    let lng = allBanners.length;
+    shuffle(allBanners.hide()).slice(lng-4).show();    
+    }
+
+    $('#randomDiv').click(randomize);
+    randomize();
+
+    function shuffle(array) {
+    var currentIndex = array.length, 
+        temporaryValue, 
+        randomIndex;
+
+    while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+    }
+    return array;
+    }
+
+    $('#randomDiv').mouseover( function() {
+    $('#topPageHeader').addClass('addAnimation');
+    });
+
+    $('#randomDiv').mouseleave( function() {
+    $('#topPageHeader').removeClass('addAnimation');
+    });
+    </script>
+    <script type="text/javascript" src="../js/language.js"></script>
+    <script type="text/javascript" src="../js/iEAlert.js"></script>
+</body>
+</html>

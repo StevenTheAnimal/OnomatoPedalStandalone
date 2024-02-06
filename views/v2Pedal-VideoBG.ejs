@@ -1,0 +1,39 @@
+<html lang="en">
+    <%- include('./partials/frontHead.ejs')  %> 
+<body>
+  <%if(nav== 'v2-vbg') {%>
+    <main>
+      <video id="video-bg" src="<%=videoURL%>" loop playsinline ></video>
+    </main>
+  <% } %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+
+    <script>
+        const languageEn = <%- JSON.stringify(language[0]) %> ;
+        const languageJp = <%- JSON.stringify(language[1]) %> ;
+        const aniName = <%- JSON.stringify(pedal.animation) %> ;
+        const colName = <%- JSON.stringify(pedal.color) %> ;
+        const allAnima = <%- JSON.stringify(animation) %> ;
+        const nav = <%- JSON.stringify(nav) %> ;
+
+        var colorValue; var theAnima;
+        for ( var a = 0; a < allAnima.length; a++ ) {
+          if ( allAnima[a].slug == aniName) {
+            for (var c = 0; c < allAnima[a].colors.length; c++ ) {
+              if (allAnima[a].colors[c].colkey == colName ) {
+                colorValue = allAnima[a].colors[c].value;
+              }
+            }
+            theAnima = allAnima[a];
+            break;
+          }
+        }
+      </script>
+      <script type="text/javascript" src="../js/language.js"></script>
+      <script type="text/javascript" src="../js/iEAlert.js"></script>
+
+      <%- include('./partials/frontPlayer.ejs')  %> 
+      <%- include( `./animations/${ pedal.animation }.ejs`)  %> 
+</body>
+</html>

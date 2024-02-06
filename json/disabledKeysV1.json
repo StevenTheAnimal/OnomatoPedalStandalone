@@ -1,0 +1,152 @@
+[
+    {
+    "key": "ONE",
+    "enabled": false,
+    "pitch": "c5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "TWO",
+    "enabled": false,
+    "pitch": "cm5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "THREE",
+    "enabled": false,
+    "pitch": "d5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "FOUR",
+    "enabled": false,
+    "pitch": "dm5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "FIVE",
+    "enabled": false,
+    "pitch": "e5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "SIX",
+    "enabled": false,
+    "pitch": "f5",
+    "sample": "11Giraffe67"
+  },
+  {
+    "key": "SEVEN",
+    "enabled": false,
+    "pitch": "g4",
+    "sample": "AstralA4"
+  },
+  {
+    "key": "EIGHT",
+    "enabled": false,
+    "pitch": "g5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "NINE",
+    "enabled": false,
+    "pitch": "gm5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "ZERO",
+    "enabled": false,
+    "pitch": "a5",
+    "sample": "c4pluck"
+  },
+  {
+    "key": "T",
+    "enabled": false,
+    "pitch": "g3",
+    "sample": "AstralG3"
+  },
+  {
+    "key": "Y",
+    "enabled": false,
+    "pitch": "a3",
+    "sample": "AstralA3"
+  },
+  {
+    "key": "U",
+    "enabled": false,
+    "pitch": "d4",
+    "sample": "AstralD4"
+  },
+  {
+    "key": "I",
+    "enabled": false,
+    "pitch": "e4",
+    "sample": "AstralE4"
+  },
+  {
+    "key": "O",
+    "enabled": false,
+    "pitch": "g4",
+    "sample": "AstralG4"
+  },
+  {
+    "key": "P",
+    "enabled": false,
+    "pitch": "a4",
+    "sample": "AstralA4"
+  },
+  {
+    "key": "G",
+    "enabled": false,
+    "pitch": "g3",
+    "sample": "FeltG3"
+  },
+  {
+    "key": "H",
+    "enabled": false,
+    "pitch": "a3",
+    "sample": "FeltA3"
+  },
+  {
+    "key": "J",
+    "enabled": false,
+    "pitch": "d4",
+    "sample": "FeltD4"
+  },
+  {
+    "key": "K",
+    "enabled": false,
+    "pitch": "e4",
+    "sample": "FeltE4"
+  },
+  {
+    "key": "L",
+    "enabled": false,
+    "pitch": "g4",
+    "sample": "FeltG4"
+  },
+  {
+    "key": "B",
+    "enabled": false,
+    "pitch": "a3",
+    "sample": "SynthA3"
+  },
+  {
+    "key": "N",
+    "enabled": false,
+    "pitch": "d4",
+    "sample": "SynthD4"
+  },
+  {
+    "key": "M",
+    "enabled": false,
+    "pitch": "e4",
+    "sample": "SynthE4"
+  },
+  {
+    "key": "SPACE",
+    "enabled": false,
+    "pitch": "e5",
+    "sample": "SynthE5"
+  }
+]

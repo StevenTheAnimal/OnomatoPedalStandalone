@@ -1,0 +1,353 @@
+[
+    {
+       "id": 0,
+       "fullName" : "Acapulco Gold",
+       "slug" : "acapulcogold",
+       "description" : "Power Amp Distortion",
+       "descriptionJP": "パワーアンプ ディストーション",
+       "eqdurl" : "https://www.earthquakerdevices.com/acapulco-gold",
+       "eqdurlJP": "https://www.earthquakerdevices.jp/acapulco-gold"
+    },
+    {
+        "id": 1,
+        "fullName" : "Afterneath",
+        "slug" : "afterneath",
+        "description" : "Otherworldly Reverberator",
+        "descriptionJP": "ショートディレイリバーブ",
+        "eqdurl":"https://www.earthquakerdevices.com/afterneath",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/afterneath"
+     },
+     {
+        "id": 2,
+        "fullName" : "Afterneath Module",
+        "slug" : "afterneathmodule",
+        "description" : "Eurorack Module",
+        "descriptionJP": "ユーロラックモジュール",
+        "eqdurl":"https://www.earthquakerdevices.com/afterneath-eurorack-module",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/afterneath-eurorack-module"
+     },
+     {
+        "id": 3,
+        "fullName" : "Aqueduct",
+        "slug" : "aqueduct",
+        "description" : "Vibrato",
+        "descriptionJP": "ビブラート",
+        "eqdurl":"https://www.earthquakerdevices.com/aqueduct",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/aqueduct"
+     },
+     {
+        "id": 4,
+        "fullName" : "Arpanoid",
+        "slug" : "arpanoid",
+        "description" : "Polyphonic Pitch Arpeggiator",
+        "descriptionJP": "ポリフォニック ピッチ アルペジエータ",
+        "eqdurl":"https://www.earthquakerdevices.com/arpanoid",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/arpanoid"
+     },
+     {
+        "id": 5,
+        "fullName" : "Arrows",
+        "slug" : "arrows",
+        "description" : "Pre-Amp Booster",
+        "descriptionJP": "プリアンプブースター",
+        "eqdurl":"https://www.earthquakerdevices.com/arrows",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/arrows"
+     },
+     {
+        "id": 6,
+        "fullName" : "Astral Destiny",
+        "slug" : "astraldestiny",
+        "description" : "An Octal Octave Reverberation Odyssey",
+        "descriptionJP": "オクターブモジュレーションリバーブ",
+        "eqdurl":"https://www.earthquakerdevices.com/astral-destiny",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/astral-destiny"
+     },
+     {
+        "id": 7,
+        "fullName" : "Avalanche Run",
+        "slug" : "avalancherun",
+        "description" : "Stereo Reverb & Delay with Tap Tempo",
+        "descriptionJP": "ステレオディレイ＆リバーブ",
+        "eqdurl":"https://www.earthquakerdevices.com/avalanche-run",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/avalanche-run"
+     },
+     {
+        "id": 8,
+        "fullName" : "Bit Commander",
+        "slug" : "bitcommander",
+        "description" : "Analog Octave Synth",
+        "descriptionJP": "アナログギターシンセサイザー",
+        "eqdurl":"https://www.earthquakerdevices.com/bit-commander",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/bit-commander"
+     },
+     {
+        "id": 9,
+        "fullName" : "Data Corrupter",
+        "slug" : "datacorrupter",
+        "description" : "Modulated Monophonic Harmonizing PLL",
+        "descriptionJP": "ハーモナイジングPLLシンセサイザー",
+        "eqdurl":"https://www.earthquakerdevices.com/data-corrupter",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/data-corrupter"
+     },
+     {
+        "id": 10,
+        "fullName" : "Dispatch Master",
+        "slug" : "dispatchmaster",
+        "description" : "Digital Delay & Reverb",
+        "descriptionJP": "デジタルディレイ＆リバーブ",
+        "eqdurl":"https://www.earthquakerdevices.com/dispatch-master",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/dispatch-master"
+     },
+     {
+        "id": 11,
+        "fullName" : "Erupter",
+        "slug" : "erupter",
+        "description" : "Ultimate Fuzz Tone",
+        "descriptionJP": "究極のファズトーン",
+        "eqdurl":"https://www.earthquakerdevices.com/erupter",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/erupter"
+     },
+     {
+        "id": 12,
+        "fullName" : "Ghost Echo",
+        "slug" : "ghostecho",
+        "description" : "Vintage Voiced Reverb",
+        "descriptionJP": "ビンテージリバーブ",
+        "eqdurl":"https://www.earthquakerdevices.com/ghost-echo",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/ghost-echo"
+     },
+     {
+        "id": 13,
+        "fullName" : "Grand Orbiter",
+        "slug" : "grandorbiter",
+        "description" : "Phase Machine",
+        "descriptionJP": "フェイザー",
+        "eqdurl":"https://www.earthquakerdevices.com/grand-orbiter",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/grand-orbiter"
+     },
+     {
+        "id": 14,
+        "fullName" : "Hoof",
+        "slug" : "hoof",
+        "description" : "Hybrid Fuzz",
+        "descriptionJP": "ハイブリッド ファズ",
+        "eqdurl":"https://www.earthquakerdevices.com/hoof",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/hoof"
+     },
+     {
+        "id": 15,
+        "fullName" : "Hoof Reaper",
+        "slug" : "hoofreaper",
+        "description" : "Double Fuzz with Octave Up",
+        "descriptionJP": "オクターブファズ",
+        "eqdurl":"https://www.earthquakerdevices.com/hoof-reaper",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/hoof-reaper"
+     },
+     {
+        "id": 16,
+        "fullName" : "Hummingbird",
+        "slug" : "hummingbird",
+        "description" : "Repeat Percussions",
+        "descriptionJP": "リピート パーカッション",
+        "eqdurl":"https://www.earthquakerdevices.com/hummingbird",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/hummingbird"
+     },
+     {
+        "id": 17,
+        "fullName" : "Levitation",
+        "slug" : "levitation",
+        "description" : "Reverberation Machine",
+        "descriptionJP": "サイケデリックリバーブ",
+        "eqdurl":"https://www.earthquakerdevices.com/levitation",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/levitation"
+     },
+     {
+        "id": 18,
+        "fullName" : "Night Wire",
+        "slug" : "nightwire",
+        "description" : "Harmonic Tremolo",
+        "descriptionJP": "ハーモニックトレモロ",
+        "eqdurl":"https://www.earthquakerdevices.com/night-wire",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/night-wire"
+     },
+     {
+        "id": 19,
+        "fullName" : "Organizer",
+        "slug" : "organizer",
+        "description" : "Polyphonic Organ Emulator",
+        "descriptionJP": "ポリフォニック オルガン エミュレータ",
+        "eqdurl":"https://www.earthquakerdevices.com/organizer",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/organizer"
+     },
+      {
+        "id": 20,
+        "fullName" : "Palisades",
+        "slug" : "palisades",
+        "description" : "Mega Ultimate Overdrive",
+        "descriptionJP": "オーバードライブ",
+        "eqdurl":"https://www.earthquakerdevices.com/palisades",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/palisades"
+     },
+    {
+        "id": 21,
+        "fullName" : "Park Fuzz",
+        "slug" : "parkfuzz",
+        "description" : "Vintage Germanium Fuzz Tone",
+        "descriptionJP": "ヴィンテージファズトーン",
+        "eqdurl":"https://www.earthquakerdevices.com/park-fuzz-sound",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/colby-fuzz-sound"
+     },
+     {
+        "id": 22,
+        "fullName" : "Plumes",
+        "slug" : "plumes",
+        "description" : "Small Signal Shredder",
+        "descriptionJP": "オーバードライブ",
+        "eqdurl":"https://www.earthquakerdevices.com/plumes",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/plumes"
+     },
+     {
+        "id": 23,
+        "fullName" : "Pyramids",
+        "slug" : "pyramids",
+        "description" : "Stereo Flanging Device",
+        "descriptionJP": "ステレオ フランジャー",
+        "eqdurl":"https://www.earthquakerdevices.com/pyramids",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/pyramids"
+     },
+     {
+        "id": 24,
+        "fullName" : "Rainbow Machine",
+        "slug" : "rainbowmachine",
+        "description" : "Polyphonic Pitch Mesmerizer",
+        "descriptionJP": "ポリフォニックピッチシフター",
+        "eqdurl":"https://www.earthquakerdevices.com/rainbow-machine",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/rainbow-machine"
+     },
+     {
+        "id": 25,
+        "fullName" : "Sea Machine",
+        "slug" : "seamachine",
+        "description" : "Super Chorus",
+        "descriptionJP": "スーパーコーラス",
+        "eqdurl":"https://www.earthquakerdevices.com/sea-machine",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/sea-machine"
+     },
+     {
+        "id": 26,
+        "fullName" : "Space Spiral",
+        "slug" : "spacespiral",
+        "description" : "Modulated Delay Device",
+        "descriptionJP": "モジュレーションディレイ",
+        "eqdurl":"https://www.earthquakerdevices.com/space-spiral",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/space-spiral"
+     },
+     {
+        "id": 27,
+        "fullName" : "Spatial Delivery",
+        "slug" : "spatialdelivery",
+        "description" : "Envelope Filter with Sample & Hold",
+        "descriptionJP": "エンベロープフィルター",
+        "eqdurl":"https://www.earthquakerdevices.com/spatial-delivery",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/spatial-delivery"
+     },
+     {
+        "id": 28,
+        "fullName" : "Swiss Things",
+        "slug" : "swissthings",
+        "description" : "Pedalboard Reconciler",
+        "descriptionJP": "エフェクトループスイッチャー",
+        "eqdurl":"https://www.earthquakerdevices.com/swiss-things",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/swiss-things"
+     },
+     {
+        "id": 29,
+        "fullName" : "Tentacle",
+        "slug" : "tentacle",
+        "description" : "Analog Octave Up",
+        "descriptionJP": "アナログオクターブアップ",
+        "eqdurl":"https://www.earthquakerdevices.com/tentacle",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/tentacle"
+     },
+     {
+        "id": 30,
+        "fullName" : "The Depths",
+        "slug" : "thedepths",
+        "description" : "Analog Optical Vibe Machine",
+        "descriptionJP": "アナログ オプティカル バイブマシーン",
+        "eqdurl":"https://www.earthquakerdevices.com/the-depths",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/the-depths"
+     },
+      {
+        "id": 31,
+        "fullName" : "The Warden",
+        "slug" : "thewarden",
+        "description" : "Optical Compressor",
+        "descriptionJP": "オプティカルコンプレッサー",
+        "eqdurl":"https://www.earthquakerdevices.com/the-warden",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/the-warden"
+     },
+      {
+        "id": 32,
+        "fullName" : "Tone Job",
+        "slug" : "tonejob",
+        "description" : "EQ & Boost",
+        "descriptionJP": "イコライザー＆ブースター",
+        "eqdurl":"https://www.earthquakerdevices.com/tone-job",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/tone-job"
+     },
+      {
+        "id": 33,
+        "fullName" : "Westwood",
+        "slug" : "westwood",
+        "description" : "Translucent Drive Manipulator",
+        "descriptionJP": "トランスルーセント・オーバードライブ",
+        "eqdurl":"https://www.earthquakerdevices.com/westwood",
+        "eqdurlJP":"https://www.earthquakerdevices.jp/westwood"
+     },
+     {
+       "id": 34,
+       "fullName" : "Sunn O))) Life Pedal",
+       "slug" : "lifepedal",
+       "description" : "Octave Distortion + Booster",
+       "descriptionJP": "オクターブディストーション&ブースター",
+       "eqdurl":"https://www.earthquakerdevices.com/life-pedal",
+       "eqdurlJP":"https://www.earthquakerdevices.jp/life-pedal"
+    },
+    {
+      "id": 35,
+      "fullName" : "Disaster Transport Legacy Reissue",
+      "slug" : "disaster-transport-reissue",
+      "description" : "The Original Delay Modulation Machine",
+      "descriptionJP": "The Original Delay Modulation Machine",
+      "eqdurl":"https://www.earthquakerdevices.com/disaster-transport-reissue",
+      "eqdurlJP":"https://www.earthquakerdevices.jp/disaster-transport-reissue"
+   },
+      {
+      "id": 36,
+      "fullName" : "Aurelius",
+      "slug" : "aurelius",
+      "description" : "Tri-Voice Chorus",
+      "descriptionJP": "Tri-Voice Chorus",
+      "eqdurl":"https://www.earthquakerdevices.com/aurelius",
+      "eqdurlJP":"https://www.earthquakerdevices.jp/aurelius"
+   },
+   {
+      "id": 37,
+      "fullName" : "Ledges",
+      "slug" : "ledges",
+      "description" : "Tri-Dimensional Reverberation Machine",
+      "descriptionJP": "Tri-Dimensional Reverberation Machine",
+      "eqdurl":"https://www.earthquakerdevices.com/ledges",
+      "eqdurlJP":"https://www.earthquakerdevices.jp/ledges"
+   },
+   {
+      "id": 38,
+      "fullName" : "Hizumitas",
+      "slug" : "hizumitas",
+      "description" : "Fuzz Sustainar",
+      "descriptionJP": "ファズ サスティナー",
+      "eqdurl":"https://www.earthquakerdevices.com/hizumitas",
+      "eqdurlJP":"https://www.earthquakerdevices.jp/hizumitas"
+   }
+   ]

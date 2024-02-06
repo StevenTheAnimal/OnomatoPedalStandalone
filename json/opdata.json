@@ -1,0 +1,3355 @@
+[
+    {
+        "_id": {
+            "$oid": "650beecdfef4b70c5f861fb5"
+        },
+        "stems": {
+            "stemBooleans": [
+                true,
+                false,
+                false,
+                false
+            ],
+            "stem1": 6,
+            "stem2": 0,
+            "stem3": 0,
+            "stem4": 0
+        },
+        "name": "waaarp",
+        "pedalFull": "astraldestiny",
+        "onomato": "Waaarp",
+        "onoMeaning": "To travel through space or to another dimension",
+        "trackName": "Waaarp",
+        "trackOnline": "",
+        "artist": "oqlolpo",
+        "website": "https://oqlolpo.com/",
+        "animation": "classic",
+        "color": "Reddish",
+        "tempo": "120",
+        "keys": [
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fb6"
+                },
+                "key": "ONE",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fb7"
+                },
+                "key": "TWO",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fb8"
+                },
+                "key": "THREE",
+                "enabled": true,
+                "pitch": "dm3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fb9"
+                },
+                "key": "FOUR",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fba"
+                },
+                "key": "FIVE",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fbb"
+                },
+                "key": "SIX",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fbc"
+                },
+                "key": "SEVEN",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fbd"
+                },
+                "key": "EIGHT",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fbe"
+                },
+                "key": "NINE",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fbf"
+                },
+                "key": "ZERO",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc0"
+                },
+                "key": "Q",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc1"
+                },
+                "key": "W",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc2"
+                },
+                "key": "E",
+                "enabled": true,
+                "pitch": "dm3",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc3"
+                },
+                "key": "R",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc4"
+                },
+                "key": "T",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc5"
+                },
+                "key": "Y",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc6"
+                },
+                "key": "U",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc7"
+                },
+                "key": "I",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc8"
+                },
+                "key": "O",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fc9"
+                },
+                "key": "P",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fca"
+                },
+                "key": "A",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fcb"
+                },
+                "key": "S",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fcc"
+                },
+                "key": "D",
+                "enabled": true,
+                "pitch": "dm4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fcd"
+                },
+                "key": "F",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fce"
+                },
+                "key": "G",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fcf"
+                },
+                "key": "H",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd0"
+                },
+                "key": "J",
+                "enabled": true,
+                "pitch": "am4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd1"
+                },
+                "key": "K",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd2"
+                },
+                "key": "L",
+                "enabled": true,
+                "pitch": "d5",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd3"
+                },
+                "key": "Z",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd4"
+                },
+                "key": "X",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd5"
+                },
+                "key": "C",
+                "enabled": true,
+                "pitch": "dm3",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd6"
+                },
+                "key": "V",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd7"
+                },
+                "key": "B",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd8"
+                },
+                "key": "N",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fd9"
+                },
+                "key": "M",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fda"
+                },
+                "key": "SPACE",
+                "enabled": false,
+                "pitch": "c2",
+                "sample": "HiBellSyn"
+            }
+        ],
+        "pads": [
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fdb"
+                },
+                "pad": "zero-0",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fdc"
+                },
+                "pad": "one-0",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fdd"
+                },
+                "pad": "two-0",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fde"
+                },
+                "pad": "three-0",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fdf"
+                },
+                "pad": "zero-1",
+                "enabled": true,
+                "pitch": "dm4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe0"
+                },
+                "pad": "one-1",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe1"
+                },
+                "pad": "two-1",
+                "enabled": true,
+                "pitch": "dm4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe2"
+                },
+                "pad": "three-1",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe3"
+                },
+                "pad": "zero-2",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe4"
+                },
+                "pad": "one-2",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "HiBellSyn"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe5"
+                },
+                "pad": "two-2",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe6"
+                },
+                "pad": "three-2",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe7"
+                },
+                "pad": "zero-3",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe8"
+                },
+                "pad": "one-3",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fe9"
+                },
+                "pad": "two-3",
+                "enabled": true,
+                "pitch": "am4",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fea"
+                },
+                "pad": "three-3",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861feb"
+                },
+                "pad": "zero-4",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fec"
+                },
+                "pad": "one-4",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fed"
+                },
+                "pad": "two-4",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fee"
+                },
+                "pad": "three-4",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fef"
+                },
+                "pad": "zero-5",
+                "enabled": true,
+                "pitch": "dm3",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff0"
+                },
+                "pad": "one-5",
+                "enabled": true,
+                "pitch": "fm3",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff1"
+                },
+                "pad": "two-5",
+                "enabled": true,
+                "pitch": "dm4",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff2"
+                },
+                "pad": "three-5",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff3"
+                },
+                "pad": "zero-6",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff4"
+                },
+                "pad": "one-6",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "WarbleSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff5"
+                },
+                "pad": "two-6",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff6"
+                },
+                "pad": "three-6",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "SynSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff7"
+                },
+                "pad": "zero-7",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "OpenBellC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff8"
+                },
+                "pad": "one-7",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "OpenBellC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ff9"
+                },
+                "pad": "two-7",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ffa"
+                },
+                "pad": "three-7",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ffb"
+                },
+                "pad": "zero-8",
+                "enabled": true,
+                "pitch": "dm3",
+                "sample": "OpenBellC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ffc"
+                },
+                "pad": "one-8",
+                "enabled": true,
+                "pitch": "fm3",
+                "sample": "OpenBellC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ffd"
+                },
+                "pad": "two-8",
+                "enabled": true,
+                "pitch": "dm3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861ffe"
+                },
+                "pad": "three-8",
+                "enabled": true,
+                "pitch": "fm3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f861fff"
+                },
+                "pad": "zero-9",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "OpenBellC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f862000"
+                },
+                "pad": "one-9",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "OpenBellC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f862001"
+                },
+                "pad": "two-9",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "MetalSynC4"
+            },
+            {
+                "_id": {
+                    "$oid": "650beecdfef4b70c5f862002"
+                },
+                "pad": "three-9",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "MetalSynC4"
+            }
+        ],
+        "samples": [
+            {
+                "_id": {
+                    "$oid": "650c5417fef4b70c5f862610"
+                },
+                "samplename": "HiBellSyn",
+                "pitch": "c4"
+            },
+            {
+                "_id": {
+                    "$oid": "650c5425fef4b70c5f862617"
+                },
+                "samplename": "MetalSynC4",
+                "pitch": "c4"
+            },
+            {
+                "_id": {
+                    "$oid": "650c5434fef4b70c5f86261e"
+                },
+                "samplename": "OpenBellC4",
+                "pitch": "c4"
+            },
+            {
+                "_id": {
+                    "$oid": "650c5440fef4b70c5f862625"
+                },
+                "samplename": "SynSynC4",
+                "pitch": "c4"
+            },
+            {
+                "_id": {
+                    "$oid": "650c5987fef4b70c5f862670"
+                },
+                "samplename": "WarbleSynC4",
+                "pitch": "c4"
+            }
+        ],
+        "cover": {
+            "coverID": 0
+        },
+        "createdAt": {
+            "$date": "2023-09-21T07:20:45.404Z"
+        },
+        "updatedAt": {
+            "$date": "2023-09-21T15:02:37.11Z"
+        },
+        "__v": 66,
+        "onoMeaningJP": "宇宙を旅したり、別の次元に旅行したりする様子。"
+    },
+    {
+        "_id": {
+            "$oid": "651ae8c4f1ed9bf4b2ca1326"
+        },
+        "name": "flutter",
+        "pedalFull": "astraldestiny",
+        "onomato": "Flutter",
+        "onoMeaning": "(of a bird or other winged creature) fly unsteadily or hover by flapping the wings quickly and lightly. \"a couple of butterflies fluttered around the garden\"",
+        "trackName": "Fluttery Felt",
+        "trackOnline": "",
+        "artist": "Joseph Minadeo",
+        "website": "https://josephminadeo.com/",
+        "animation": "blocky",
+        "color": "Muted",
+        "tempo": "59",
+        "keys": [
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a093"
+                },
+                "key": "ONE",
+                "enabled": false,
+                "pitch": "c5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a094"
+                },
+                "key": "TWO",
+                "enabled": false,
+                "pitch": "cm5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a095"
+                },
+                "key": "THREE",
+                "enabled": false,
+                "pitch": "d5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a096"
+                },
+                "key": "FOUR",
+                "enabled": false,
+                "pitch": "dm5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a097"
+                },
+                "key": "FIVE",
+                "enabled": false,
+                "pitch": "e5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a098"
+                },
+                "key": "SIX",
+                "enabled": false,
+                "pitch": "f5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a099"
+                },
+                "key": "SEVEN",
+                "enabled": false,
+                "pitch": "g4",
+                "sample": "AstralA4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a09a"
+                },
+                "key": "EIGHT",
+                "enabled": false,
+                "pitch": "g5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a09b"
+                },
+                "key": "NINE",
+                "enabled": false,
+                "pitch": "gm5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a09c"
+                },
+                "key": "ZERO",
+                "enabled": false,
+                "pitch": "a5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a09d"
+                },
+                "key": "Q",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "AstralG2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a09e"
+                },
+                "key": "W",
+                "enabled": true,
+                "pitch": "a2",
+                "sample": "AstralA2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a09f"
+                },
+                "key": "E",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "AstralD3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a0"
+                },
+                "key": "R",
+                "enabled": true,
+                "pitch": "e3",
+                "sample": "AstralE3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a1"
+                },
+                "key": "T",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "AstralG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a2"
+                },
+                "key": "Y",
+                "enabled": true,
+                "pitch": "a3",
+                "sample": "AstralA3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a3"
+                },
+                "key": "U",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "AstralD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a4"
+                },
+                "key": "I",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "AstralE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a5"
+                },
+                "key": "O",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "AstralG4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a6"
+                },
+                "key": "P",
+                "enabled": true,
+                "pitch": "a4",
+                "sample": "AstralA4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a7"
+                },
+                "key": "A",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "FeltG2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a8"
+                },
+                "key": "S",
+                "enabled": true,
+                "pitch": "a2",
+                "sample": "FeltA2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0a9"
+                },
+                "key": "D",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "FeltD3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0aa"
+                },
+                "key": "F",
+                "enabled": true,
+                "pitch": "e3",
+                "sample": "FeltE3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0ab"
+                },
+                "key": "G",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "FeltG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0ac"
+                },
+                "key": "H",
+                "enabled": true,
+                "pitch": "a3",
+                "sample": "FeltA3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0ad"
+                },
+                "key": "J",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "FeltD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0ae"
+                },
+                "key": "K",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "FeltE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0af"
+                },
+                "key": "L",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "FeltG4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b0"
+                },
+                "key": "Z",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "SynthG2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b1"
+                },
+                "key": "X",
+                "enabled": true,
+                "pitch": "a2",
+                "sample": "SynthA2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b2"
+                },
+                "key": "C",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "SynthD3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b3"
+                },
+                "key": "V",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "SynthG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b4"
+                },
+                "key": "B",
+                "enabled": true,
+                "pitch": "a3",
+                "sample": "SynthA3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b5"
+                },
+                "key": "N",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "SynthD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b6"
+                },
+                "key": "M",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "SynthE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b7"
+                },
+                "key": "SPACE",
+                "enabled": true,
+                "pitch": "e5",
+                "sample": "SynthE5"
+            }
+        ],
+        "pads": [
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b8"
+                },
+                "pad": "zero-0",
+                "enabled": true,
+                "pitch": "a4",
+                "sample": "AstralA4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0b9"
+                },
+                "pad": "one-0",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "SynthE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0ba"
+                },
+                "pad": "two-0",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "SynthE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0bb"
+                },
+                "pad": "three-0",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "FeltG4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0bc"
+                },
+                "pad": "zero-1",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "AstralG4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0bd"
+                },
+                "pad": "one-1",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "SynthD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0be"
+                },
+                "pad": "two-1",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "SynthD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0bf"
+                },
+                "pad": "three-1",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "FeltE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c0"
+                },
+                "pad": "zero-2",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "AstralE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c1"
+                },
+                "pad": "one-2",
+                "enabled": true,
+                "pitch": "a3",
+                "sample": "SynthA3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c2"
+                },
+                "pad": "two-2",
+                "enabled": true,
+                "pitch": "a3",
+                "sample": "SynthA3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c3"
+                },
+                "pad": "three-2",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "FeltD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c4"
+                },
+                "pad": "zero-3",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "AstralD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c5"
+                },
+                "pad": "one-3",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "SynthG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c6"
+                },
+                "pad": "two-3",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "FeltE4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c7"
+                },
+                "pad": "three-3",
+                "enabled": true,
+                "pitch": "a3",
+                "sample": "FeltA3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c8"
+                },
+                "pad": "zero-4",
+                "enabled": true,
+                "pitch": "a3",
+                "sample": "AstralA3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0c9"
+                },
+                "pad": "one-4",
+                "enabled": true,
+                "pitch": "a4",
+                "sample": "AstralA4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0ca"
+                },
+                "pad": "two-4",
+                "enabled": true,
+                "pitch": "e4",
+                "sample": "FeltG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0cb"
+                },
+                "pad": "three-4",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "FeltG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0cc"
+                },
+                "pad": "zero-5",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "AstralG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0cd"
+                },
+                "pad": "one-5",
+                "enabled": true,
+                "pitch": "d4",
+                "sample": "FeltG2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0ce"
+                },
+                "pad": "two-5",
+                "enabled": true,
+                "pitch": "a4",
+                "sample": "FeltE5"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0cf"
+                },
+                "pad": "three-5",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "FeltG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d0"
+                },
+                "pad": "zero-6",
+                "enabled": true,
+                "pitch": "e3",
+                "sample": "AstralE3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d1"
+                },
+                "pad": "one-6",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "SynthG3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d2"
+                },
+                "pad": "two-6",
+                "enabled": true,
+                "pitch": "e5",
+                "sample": "FeltD4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d3"
+                },
+                "pad": "three-6",
+                "enabled": true,
+                "pitch": "e3",
+                "sample": "FeltE3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d4"
+                },
+                "pad": "zero-7",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "AstralD3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d5"
+                },
+                "pad": "one-7",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "SynthD3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d6"
+                },
+                "pad": "two-7",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "SynthD3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d7"
+                },
+                "pad": "three-7",
+                "enabled": true,
+                "pitch": "d3",
+                "sample": "FeltD3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d8"
+                },
+                "pad": "zero-8",
+                "enabled": true,
+                "pitch": "a2",
+                "sample": "AstralA2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0d9"
+                },
+                "pad": "one-8",
+                "enabled": true,
+                "pitch": "a2",
+                "sample": "SynthA2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0da"
+                },
+                "pad": "two-8",
+                "enabled": true,
+                "pitch": "a2",
+                "sample": "SynthA2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0db"
+                },
+                "pad": "three-8",
+                "enabled": true,
+                "pitch": "a2",
+                "sample": "FeltA2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0dc"
+                },
+                "pad": "zero-9",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "AstralG2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0dd"
+                },
+                "pad": "one-9",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "SynthG2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0de"
+                },
+                "pad": "two-9",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "SynthG2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0df"
+                },
+                "pad": "three-9",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "FeltG2"
+            }
+        ],
+        "samples": [
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0e0"
+                },
+                "samplename": "c4pluck",
+                "pitch": "c4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0e1"
+                },
+                "samplename": "c4piano",
+                "pitch": "c4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186a256c299bbcbcd5a0e2"
+                },
+                "samplename": "c4tone",
+                "pitch": "c4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186ce26c299bbcbcd5a0e4"
+                },
+                "samplename": "AstralG2",
+                "pitch": "g2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186cfb6c299bbcbcd5a0e5"
+                },
+                "samplename": "AstralA2",
+                "pitch": "a2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186d106c299bbcbcd5a0e6"
+                },
+                "samplename": "AstralD3",
+                "pitch": "d3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186d266c299bbcbcd5a0e7"
+                },
+                "samplename": "AstralA3",
+                "pitch": "a3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186d3b6c299bbcbcd5a0e8"
+                },
+                "samplename": "AstralA4",
+                "pitch": "a4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186d4f6c299bbcbcd5a0e9"
+                },
+                "samplename": "AstralD4",
+                "pitch": "d4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186d7a6c299bbcbcd5a0ea"
+                },
+                "samplename": "AstralD5",
+                "pitch": "d5"
+            },
+            {
+                "_id": {
+                    "$oid": "61186d8b6c299bbcbcd5a0eb"
+                },
+                "samplename": "AstralE3",
+                "pitch": "e3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186d9e6c299bbcbcd5a0ec"
+                },
+                "samplename": "AstralE4",
+                "pitch": "e4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186dad6c299bbcbcd5a0ed"
+                },
+                "samplename": "AstralE5",
+                "pitch": "e5"
+            },
+            {
+                "_id": {
+                    "$oid": "61186dc36c299bbcbcd5a0ee"
+                },
+                "samplename": "AstralG3",
+                "pitch": "g3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186de56c299bbcbcd5a0ef"
+                },
+                "samplename": "AstralG4",
+                "pitch": "g4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186df66c299bbcbcd5a0f0"
+                },
+                "samplename": "FeltA2",
+                "pitch": "a2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e0a6c299bbcbcd5a0f1"
+                },
+                "samplename": "FeltA3",
+                "pitch": "a3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e1b6c299bbcbcd5a0f2"
+                },
+                "samplename": "FeltA4",
+                "pitch": "a4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e2e6c299bbcbcd5a0f3"
+                },
+                "samplename": "FeltD3",
+                "pitch": "d3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e3d6c299bbcbcd5a0f4"
+                },
+                "samplename": "FeltD4",
+                "pitch": "d4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e4a6c299bbcbcd5a0f5"
+                },
+                "samplename": "FeltD5",
+                "pitch": "d5"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e616c299bbcbcd5a0f6"
+                },
+                "samplename": "FeltE3",
+                "pitch": "e3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e706c299bbcbcd5a0f7"
+                },
+                "samplename": "FeltE4",
+                "pitch": "e4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e876c299bbcbcd5a0f8"
+                },
+                "samplename": "FeltE5",
+                "pitch": "e5"
+            },
+            {
+                "_id": {
+                    "$oid": "61186e9d6c299bbcbcd5a0f9"
+                },
+                "samplename": "FeltG2",
+                "pitch": "g2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186eab6c299bbcbcd5a0fa"
+                },
+                "samplename": "FeltG3",
+                "pitch": "g3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186eb96c299bbcbcd5a0fb"
+                },
+                "samplename": "FeltG4",
+                "pitch": "g4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186ece6c299bbcbcd5a0fc"
+                },
+                "samplename": "SynthA2",
+                "pitch": "a2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186edc6c299bbcbcd5a0fd"
+                },
+                "samplename": "SynthA3",
+                "pitch": "a3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186ef46c299bbcbcd5a0fe"
+                },
+                "samplename": "SynthA4",
+                "pitch": "a4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f096c299bbcbcd5a0ff"
+                },
+                "samplename": "SynthD3",
+                "pitch": "d3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f1a6c299bbcbcd5a100"
+                },
+                "samplename": "SynthD4",
+                "pitch": "d4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f2c6c299bbcbcd5a101"
+                },
+                "samplename": "SynthD5",
+                "pitch": "d5"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f3e6c299bbcbcd5a102"
+                },
+                "samplename": "SynthE3",
+                "pitch": "e3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f506c299bbcbcd5a103"
+                },
+                "samplename": "SynthE4",
+                "pitch": "e4"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f5f6c299bbcbcd5a104"
+                },
+                "samplename": "SynthE5",
+                "pitch": "e5"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f6d6c299bbcbcd5a105"
+                },
+                "samplename": "SynthG2",
+                "pitch": "g2"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f7d6c299bbcbcd5a106"
+                },
+                "samplename": "SynthG3",
+                "pitch": "g3"
+            },
+            {
+                "_id": {
+                    "$oid": "61186f8d6c299bbcbcd5a107"
+                },
+                "samplename": "SynthG4",
+                "pitch": "g4"
+            }
+        ],
+        "createdAt": {
+            "$date": "2021-08-15T01:13:09.578Z"
+        },
+        "updatedAt": {
+            "$date": "2023-10-15T12:25:10.175Z"
+        },
+        "__v": 36,
+        "cover": {
+            "coverAnima": "classic",
+            "coverCol": "Muted",
+            "coverOno": "Flutter",
+            "coverPedal": "astraldestiny",
+            "coverID": 0
+        },
+        "stems": {
+            "stem1": 0,
+            "stem2": 0,
+            "stem3": 0,
+            "stem4": 0,
+            "stemBooleans": [
+                true,
+                true,
+                true,
+                false
+            ]
+        },
+        "onoMeaningJP": "鳥などの翼のある生き物が、翼を素早く軽く羽ばたかせて飛行したり、ホバリングしたりする様子。"
+    },
+    {
+        "_id": {
+            "$oid": "651d26d3fef4b70c5f862739"
+        },
+        "stems": {
+            "stemBooleans": [
+                true,
+                true,
+                false,
+                false
+            ],
+            "stem1": 1,
+            "stem2": 1,
+            "stem3": 0,
+            "stem4": 0
+        },
+        "name": "hum",
+        "pedalFull": "aurelius",
+        "onomato": "Hum",
+        "onoMeaning": "A low, mostly steady continuous sound",
+        "trackName": "Hum",
+        "trackOnline": "",
+        "artist": "oqlolpo",
+        "website": "",
+        "animation": "erosion",
+        "color": "Soft",
+        "tempo": "110",
+        "keys": [
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86273a"
+                },
+                "key": "ONE",
+                "enabled": false,
+                "pitch": "c5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86273b"
+                },
+                "key": "TWO",
+                "enabled": false,
+                "pitch": "cm5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86273c"
+                },
+                "key": "THREE",
+                "enabled": false,
+                "pitch": "d5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86273d"
+                },
+                "key": "FOUR",
+                "enabled": false,
+                "pitch": "dm5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86273e"
+                },
+                "key": "FIVE",
+                "enabled": false,
+                "pitch": "e5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86273f"
+                },
+                "key": "SIX",
+                "enabled": false,
+                "pitch": "f5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862740"
+                },
+                "key": "SEVEN",
+                "enabled": false,
+                "pitch": "fm5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862741"
+                },
+                "key": "EIGHT",
+                "enabled": false,
+                "pitch": "g5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862742"
+                },
+                "key": "NINE",
+                "enabled": false,
+                "pitch": "gm5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862743"
+                },
+                "key": "ZERO",
+                "enabled": false,
+                "pitch": "a5",
+                "sample": "c4pluck"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862744"
+                },
+                "key": "Q",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862745"
+                },
+                "key": "W",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862746"
+                },
+                "key": "E",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862747"
+                },
+                "key": "R",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862748"
+                },
+                "key": "T",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862749"
+                },
+                "key": "Y",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86274a"
+                },
+                "key": "U",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86274b"
+                },
+                "key": "I",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86274c"
+                },
+                "key": "O",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86274d"
+                },
+                "key": "P",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86274e"
+                },
+                "key": "A",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86274f"
+                },
+                "key": "S",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862750"
+                },
+                "key": "D",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862751"
+                },
+                "key": "F",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862752"
+                },
+                "key": "G",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862753"
+                },
+                "key": "H",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862754"
+                },
+                "key": "J",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862755"
+                },
+                "key": "K",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862756"
+                },
+                "key": "L",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862757"
+                },
+                "key": "Z",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "ToneF3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862758"
+                },
+                "key": "X",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "ToneF3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862759"
+                },
+                "key": "C",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "ToneF3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86275a"
+                },
+                "key": "V",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "ToneF3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86275b"
+                },
+                "key": "B",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "ToneF3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86275c"
+                },
+                "key": "N",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "ToneF3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86275d"
+                },
+                "key": "M",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneF3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86275e"
+                },
+                "key": "SPACE",
+                "enabled": false,
+                "pitch": "g2",
+                "sample": "c4pluck"
+            }
+        ],
+        "pads": [
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86275f"
+                },
+                "pad": "zero-0",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "ToneGs4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862760"
+                },
+                "pad": "one-0",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "ToneGs4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862761"
+                },
+                "pad": "two-0",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862762"
+                },
+                "pad": "three-0",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862763"
+                },
+                "pad": "zero-1",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "ToneGs4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862764"
+                },
+                "pad": "one-1",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "ToneGs4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862765"
+                },
+                "pad": "two-1",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862766"
+                },
+                "pad": "three-1",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862767"
+                },
+                "pad": "zero-2",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneGs4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862768"
+                },
+                "pad": "one-2",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneGs4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862769"
+                },
+                "pad": "two-2",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86276a"
+                },
+                "pad": "three-2",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneC5"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86276b"
+                },
+                "pad": "zero-3",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86276c"
+                },
+                "pad": "one-3",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86276d"
+                },
+                "pad": "two-3",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86276e"
+                },
+                "pad": "three-3",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86276f"
+                },
+                "pad": "zero-4",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862770"
+                },
+                "pad": "one-4",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862771"
+                },
+                "pad": "two-4",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862772"
+                },
+                "pad": "three-4",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862773"
+                },
+                "pad": "zero-5",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862774"
+                },
+                "pad": "one-5",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862775"
+                },
+                "pad": "two-5",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862776"
+                },
+                "pad": "three-5",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862777"
+                },
+                "pad": "zero-6",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862778"
+                },
+                "pad": "one-6",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "ToneGs2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862779"
+                },
+                "pad": "two-6",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86277a"
+                },
+                "pad": "three-6",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86277b"
+                },
+                "pad": "zero-7",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86277c"
+                },
+                "pad": "one-7",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86277d"
+                },
+                "pad": "two-7",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86277e"
+                },
+                "pad": "three-7",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f86277f"
+                },
+                "pad": "zero-8",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862780"
+                },
+                "pad": "one-8",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862781"
+                },
+                "pad": "two-8",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862782"
+                },
+                "pad": "three-8",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862783"
+                },
+                "pad": "zero-9",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862784"
+                },
+                "pad": "one-9",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "ToneC3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862785"
+                },
+                "pad": "two-9",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "ToneF4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d26d3fef4b70c5f862786"
+                },
+                "pad": "three-9",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "ToneF4"
+            }
+        ],
+        "samples": [
+            {
+                "_id": {
+                    "$oid": "651d27c8fef4b70c5f8627ec"
+                },
+                "samplename": "ToneF2",
+                "pitch": "f2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d27fbfef4b70c5f862808"
+                },
+                "samplename": "ToneGs2",
+                "pitch": "gm2"
+            },
+            {
+                "_id": {
+                    "$oid": "651d2817fef4b70c5f86280f"
+                },
+                "samplename": "ToneC3",
+                "pitch": "c3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d2857fef4b70c5f862828"
+                },
+                "samplename": "ToneF3",
+                "pitch": "f3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d286dfef4b70c5f86282f"
+                },
+                "samplename": "ToneGs3",
+                "pitch": "gm3"
+            },
+            {
+                "_id": {
+                    "$oid": "651d2884fef4b70c5f862836"
+                },
+                "samplename": "ToneF4",
+                "pitch": "f4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d28a2fef4b70c5f86283d"
+                },
+                "samplename": "ToneGs4",
+                "pitch": "gm4"
+            },
+            {
+                "_id": {
+                    "$oid": "651d28b2fef4b70c5f862844"
+                },
+                "samplename": "ToneC5",
+                "pitch": "c5"
+            }
+        ],
+        "cover": {
+            "coverID": 0
+        },
+        "createdAt": {
+            "$date": "2023-10-04T08:48:19.466Z"
+        },
+        "updatedAt": {
+            "$date": "2023-10-04T09:09:05.215Z"
+        },
+        "__v": 22
+    },
+    {
+        "_id": {
+            "$oid": "6527bbdcfef4b70c5f862a3c"
+        },
+        "stems": {
+            "stemBooleans": [
+                true,
+                true,
+                true,
+                true
+            ],
+            "stem1": 4,
+            "stem2": 4,
+            "stem3": 3,
+            "stem4": 3
+        },
+        "name": "sparkle",
+        "pedalFull": "ledges",
+        "onomato": "Sparkle",
+        "onoMeaning": "✨✨✨✨✨✨✨✨✨✨",
+        "trackName": "Untitled",
+        "trackOnline": "",
+        "artist": "oqlolpo",
+        "website": "https://oqlolpo.com",
+        "animation": "poets",
+        "color": "Muted",
+        "tempo": "210",
+        "keys": [
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a3d"
+                },
+                "key": "ONE",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a3e"
+                },
+                "key": "TWO",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a3f"
+                },
+                "key": "THREE",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a40"
+                },
+                "key": "FOUR",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a41"
+                },
+                "key": "FIVE",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a42"
+                },
+                "key": "SIX",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a43"
+                },
+                "key": "SEVEN",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a44"
+                },
+                "key": "EIGHT",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a45"
+                },
+                "key": "NINE",
+                "enabled": true,
+                "pitch": "am4",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a46"
+                },
+                "key": "ZERO",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a47"
+                },
+                "key": "Q",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a48"
+                },
+                "key": "W",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a49"
+                },
+                "key": "E",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a4a"
+                },
+                "key": "R",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a4b"
+                },
+                "key": "T",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a4c"
+                },
+                "key": "Y",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a4d"
+                },
+                "key": "U",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a4e"
+                },
+                "key": "I",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a4f"
+                },
+                "key": "O",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a50"
+                },
+                "key": "P",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "GitG3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a51"
+                },
+                "key": "A",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a52"
+                },
+                "key": "S",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a53"
+                },
+                "key": "D",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a54"
+                },
+                "key": "F",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a55"
+                },
+                "key": "G",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a56"
+                },
+                "key": "H",
+                "enabled": true,
+                "pitch": "g4",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a57"
+                },
+                "key": "J",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a58"
+                },
+                "key": "K",
+                "enabled": true,
+                "pitch": "am4",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a59"
+                },
+                "key": "L",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a5a"
+                },
+                "key": "Z",
+                "enabled": true,
+                "pitch": "f3",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a5b"
+                },
+                "key": "X",
+                "enabled": true,
+                "pitch": "g3",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a5c"
+                },
+                "key": "C",
+                "enabled": true,
+                "pitch": "gm3",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a5d"
+                },
+                "key": "V",
+                "enabled": true,
+                "pitch": "am3",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a5e"
+                },
+                "key": "B",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a5f"
+                },
+                "key": "N",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a60"
+                },
+                "key": "M",
+                "enabled": true,
+                "pitch": "c4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a61"
+                },
+                "key": "SPACE",
+                "enabled": false,
+                "pitch": "g2",
+                "sample": "c4pluck"
+            }
+        ],
+        "pads": [
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a62"
+                },
+                "pad": "zero-0",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a63"
+                },
+                "pad": "one-0",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a64"
+                },
+                "pad": "two-0",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a65"
+                },
+                "pad": "three-0",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a66"
+                },
+                "pad": "zero-1",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a67"
+                },
+                "pad": "one-1",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a68"
+                },
+                "pad": "two-1",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a69"
+                },
+                "pad": "three-1",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a6a"
+                },
+                "pad": "zero-2",
+                "enabled": true,
+                "pitch": "c3",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a6b"
+                },
+                "pad": "one-2",
+                "enabled": true,
+                "pitch": "f4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a6c"
+                },
+                "pad": "two-2",
+                "enabled": true,
+                "pitch": "gm4",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a6d"
+                },
+                "pad": "three-2",
+                "enabled": true,
+                "pitch": "c5",
+                "sample": "GitC4"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a6e"
+                },
+                "pad": "zero-3",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a6f"
+                },
+                "pad": "one-3",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a70"
+                },
+                "pad": "two-3",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a71"
+                },
+                "pad": "three-3",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a72"
+                },
+                "pad": "zero-4",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a73"
+                },
+                "pad": "one-4",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a74"
+                },
+                "pad": "two-4",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a75"
+                },
+                "pad": "three-4",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a76"
+                },
+                "pad": "zero-5",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a77"
+                },
+                "pad": "one-5",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a78"
+                },
+                "pad": "two-5",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a79"
+                },
+                "pad": "three-5",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a7a"
+                },
+                "pad": "zero-6",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a7b"
+                },
+                "pad": "one-6",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitGSharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a7c"
+                },
+                "pad": "two-6",
+                "enabled": true,
+                "pitch": "gm2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a7d"
+                },
+                "pad": "three-6",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitASharp3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a7e"
+                },
+                "pad": "zero-7",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a7f"
+                },
+                "pad": "one-7",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a80"
+                },
+                "pad": "two-7",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a81"
+                },
+                "pad": "three-7",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a82"
+                },
+                "pad": "zero-8",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a83"
+                },
+                "pad": "one-8",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a84"
+                },
+                "pad": "two-8",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a85"
+                },
+                "pad": "three-8",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a86"
+                },
+                "pad": "zero-9",
+                "enabled": true,
+                "pitch": "c2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a87"
+                },
+                "pad": "one-9",
+                "enabled": true,
+                "pitch": "f2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a88"
+                },
+                "pad": "two-9",
+                "enabled": true,
+                "pitch": "g2",
+                "sample": "GitF3"
+            },
+            {
+                "_id": {
+                    "$oid": "6527bbdcfef4b70c5f862a89"
+                },
+                "pad": "three-9",
+                "enabled": true,
+                "pitch": "am2",
+                "sample": "GitF3"
+            }
+        ],
+        "samples": [
+            {
+                "_id": {
+                    "$oid": "654e1932fef4b70c5f862ef4"
+                },
+                "samplename": "GitF3",
+                "pitch": "f3"
+            },
+            {
+                "_id": {
+                    "$oid": "654e1964fef4b70c5f862f09"
+                },
+                "samplename": "GitG3",
+                "pitch": "g3"
+            },
+            {
+                "_id": {
+                    "$oid": "654e1980fef4b70c5f862f10"
+                },
+                "samplename": "GitGSharp3",
+                "pitch": "gm3"
+            },
+            {
+                "_id": {
+                    "$oid": "654e19ccfef4b70c5f862f17"
+                },
+                "samplename": "GitASharp3",
+                "pitch": "am3"
+            },
+            {
+                "_id": {
+                    "$oid": "654e19dffef4b70c5f862f1e"
+                },
+                "samplename": "GitC4",
+                "pitch": "c4"
+            }
+        ],
+        "cover": {
+            "coverID": 0
+        },
+        "createdAt": {
+            "$date": "2023-10-12T09:26:52.104Z"
+        },
+        "updatedAt": {
+            "$date": "2023-11-10T12:09:47.026Z"
+        },
+        "__v": 49
+    }
+]

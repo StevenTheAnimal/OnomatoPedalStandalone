@@ -1,0 +1,469 @@
+<div id="v1header">
+<%- include('./v1header.ejs')  %> 
+</div>
+<div class="infoPanel">
+
+    <div class="flex">
+        <div class="infoOne">
+            <div class="opImg">
+                <img  src="../<%=coverFile%>" alt="pedal">
+            </div>
+        </div>
+    
+        <div class="infoTwo">
+            <p class="label">ONOMATOPOEIA</p>
+            <h2><%= pedal.onomato %></h2>
+            <p id="onoMeaning"></p>
+            <p class="label">FEATURED PEDAL</p>
+            <h2 id="pedalDisplay"></h2>
+            <p id="pedalDesc"></p>
+            <p class="label">TRACK / ARTIST</p>
+            <p><i>"<%= pedal.trackName %>"</i> by </p>
+            <h2><%= pedal.artist %></h2>
+            <%if(nav== 'v2-vbg') {%>
+                <p class="label">BG VIDEO</p>
+                <p><i>"Waaarp"</i> by </p>
+                <h2>oqlOlpo</h2>
+            <% } else { %>
+                <p class="label">ANIMATION</p>
+                <% for ( var a = 0; a < animation.length; a++ ) { %> 
+                    <% if ( animation[a].slug == pedal.animation ) { %>
+                        <p><i>"<%= animation[a].fullName %>"</i> by </p>
+                        <h2><%= animation[a].artist %></h2>
+                    <% } %>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+
+    <div class="morePedalContainer">
+        <div class="secTitle">More OPs</div>
+        <div class="merch-icons">
+            <% morePedals.forEach((item) => { %>
+                <a href="..<%=item.link%>">
+                    <div class="icon">
+                        <img src="../<%=item.image%>" alt="<%=item.id%>">
+                    </div>
+                </a>
+            <% }) %>
+        </div>
+    </div>
+    
+        </div>
+        <div class="playBtnPanel">PLAY</div>
+    
+
+    <div id="controller">
+        <div id="controlMain" class="paused"></div>
+        <% if(nav !== 'v2-vbg') {%>
+            <div id="controlStems">
+                <% for (var stbtn = 0; stbtn<stemFiles.length; stbtn++) {%>
+                    <% if(stemFiles[stbtn] == true) {%>
+                        <div class="stem muted" id="stem<%= stems[stbtn] %>"><%= stbtn + 1 %></div>
+                    <% } else {%>
+                        <div class="stem muted disabled" id="stem<%= stems[stbtn] %>"><%= stbtn + 1 %></div>
+                    <% } %>
+                <% } %>
+                <div id="muteBtn" class="unmuted">
+                </div>
+            </div>
+        <% } %>
+    </div>
+
+    <div id="drumpads" style="user-select: none">
+        <div class="pad" id="zero-0"></div>
+        <div class="pad" id="one-0"></div>
+        <div class="pad" id="two-0"></div>
+        <div class="pad" id="three-0"></div>
+    
+        <div class="pad" id="zero-1"></div>
+        <div class="pad" id="one-1"></div>
+        <div class="pad" id="two-1"></div>
+        <div class="pad" id="three-1"></div>
+    
+        <div class="pad" id="zero-2"></div>
+        <div class="pad" id="one-2"></div>
+        <div class="pad" id="two-2"></div>
+        <div class="pad" id="three-2"></div>
+    
+        <div class="pad" id="zero-3"></div>
+        <div class="pad" id="one-3"></div>
+        <div class="pad" id="two-3"></div>
+        <div class="pad" id="three-3"></div>
+    
+        <div class="pad" id="zero-4"></div>
+        <div class="pad" id="one-4"></div>
+        <div class="pad" id="two-4"></div>
+        <div class="pad" id="three-4"></div>
+    
+        <div class="pad" id="zero-5"></div>
+        <div class="pad" id="one-5"></div>
+        <div class="pad" id="two-5"></div>
+        <div class="pad" id="three-5"></div>
+    
+        <div class="pad" id="zero-6"></div>
+        <div class="pad" id="one-6"></div>
+        <div class="pad" id="two-6"></div>
+        <div class="pad" id="three-6"></div>
+    
+        <div class="pad" id="zero-7"></div>
+        <div class="pad" id="one-7"></div>
+        <div class="pad" id="two-7"></div>
+        <div class="pad" id="three-7"></div>
+    
+        <div class="pad" id="zero-8"></div>
+        <div class="pad" id="one-8"></div>
+        <div class="pad" id="two-8"></div>
+        <div class="pad" id="three-8"></div>
+    
+        <div class="pad" id="zero-9"></div>
+        <div class="pad" id="one-9"></div>
+        <div class="pad" id="two-9"></div>
+        <div class="pad" id="three-9"></div>
+      </div>
+   
+
+  <div class="blackscreen"></div>
+<div class="loadingSpinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+<audio id = "music_background" class="display_none"> 
+    <source src="../sound/blank.mp3"/>
+    HTML5 audio not supported
+</audio>
+
+<script>
+    var coverFile = <%- JSON.stringify(coverFile) %> ;
+    let touched = false;
+    var isTouch = true;
+
+    if ( ( navigator.userAgent.match(/iPhone/i) ) || ( navigator.userAgent.match(/iPad/i) ) ) {
+        
+        $("body").append('<a id="init"></a>')
+            .on( 'touchstart', function() {
+                if(touched == false) {
+                    soundInit();
+                }
+            } );
+
+        function soundInit() {
+            var musicBackground = $("#music_background").get(0);
+            musicBackground.play();
+            musicBackground.volume = 0;
+            $("#init").fadeOut(0);
+            musicBackground.srcObj = null;
+            $("body a#init").remove();
+            touched = true;
+        }
+    };
+
+    $('.blackscreen, .loadingSpinner').show();
+    window.onload = ()=> { $('.blackscreen, .loadingSpinner').hide(); };
+
+        var thepedal = <%- JSON.stringify(pedal) %> ;
+        var eqdPedals = <%- JSON.stringify(eqdPedals) %> ;
+        var theAnima = <%- JSON.stringify(animation) %> ;
+        var mobile = <%- JSON.stringify(mobile) %> ;
+
+        for (var p = 0; p < eqdPedals.length; p++) {
+            if (thepedal.pedalFull == eqdPedals[p].slug) {
+                $('#pedalDisplay').html(eqdPedals[p].fullName);
+            // Language 
+                if (localStorage.getItem("language") == 'jp') {
+                    $('#pedalDesc').html(eqdPedals[p].descriptionJP);
+                    $('#onoMeaning').html(thepedal.onoMeaningJP);
+                } else {
+                    $('#pedalDesc').html(eqdPedals[p].description);
+                    $('#onoMeaning').html(thepedal.onoMeaning);
+                }
+                    
+                break;
+            }
+        }
+
+        var onoStr = thepedal.onomato;
+        var words = onoStr.split(' ').length;
+        if (words === 1) {$('#onoText').css('font-size', '24em');}
+        else if (words === 2) {$('#onoText').css('font-size', '12em');}
+        else {$('#onoText').css('font-size', '8em');}
+
+        ///// Audio Player
+        var thekeys = <%- JSON.stringify(pedal.keys) %> ;
+        var thepads = <%- JSON.stringify(pedal.pads) %> ;
+        var thesamples = <%- JSON.stringify(pedal.samples) %> ;
+        var username = <%- JSON.stringify(name) %> ;
+
+        var stemFiles = <%- JSON.stringify(stemFiles) %> ;
+        var stemFileNames = <%- JSON.stringify(stemFileNames) %> ;
+
+        const controlMain = $('#controlMain');
+        const stems = $('.stem');
+        let toneStarted = false;
+
+        if(nav == 'v2') {     
+            function makeChannel( url, file, pan = 0 ) {
+                const channel = new Tone.Channel({ pan }).toDestination();
+                const player = new Tone.Player({
+                    url : '../sound/v2/' + file,
+                    loop: true
+                }).sync().start(0);
+                player.context.resume(); // necessary for Safari
+                player.connect(channel);
+
+                const btn = url;
+                const thisMuteButton = document.getElementById(btn);
+                $(thisMuteButton).on('click', (event) => {
+                    event.preventDefault();
+                    const checkMuted = $(event.target).hasClass("muted") ? true : false;
+                    if (checkMuted) {
+                        channel.mute = false;
+                    } else {
+                        channel.mute = true;
+                    }
+                });
+
+                const theMuteBtn = $('#muteBtn');
+                $(theMuteBtn).on('click', () => {
+                    event.preventDefault();
+                    if ($(theMuteBtn).hasClass("muted")) {
+                        for (let s = 0; s < stems.length; s++) {
+                            channel.mute = false;
+                        }
+                    } else {
+                        for (let s = 0; s < stems.length; s++) {
+                            channel.mute = true;
+                        }
+                    }
+                });
+
+                $(controlMain).on('click', () => {
+                    const checkPaused = thisMuteButton.classList.contains("paused") ? true : false;
+                    if(!checkPaused){
+                        for (let s = 0; s < stems.length; s++) {
+                            channel.mute = false;
+                        }
+                    }
+                });
+            };
+
+            for (var sf = 0; sf < stemFiles.length; sf++) {
+                var channelName = ['stem1', 'stem2', 'stem3', 'stem4']
+                if (stemFiles[sf] == true) {
+                    makeChannel(channelName[sf], stemFileNames[sf]);
+                }
+            }
+        }
+        
+        if(mobile || isTouch) {
+            $('div.infoThree').hide();
+        }
+
+        let videoPlaying = false;
+
+    // Play/Pause Button
+    async function controlHandler(e) {
+        if(nav == 'v2-vbg') {
+            const video = $('#video-bg');
+            const videoElement = video.get(0);
+                
+                if(videoPlaying) {
+                    videoElement.pause();
+                    videoPlaying = false;
+                } else {
+                    videoElement.play();
+                    videoPlaying = true;
+                }
+                if(!toneStarted) {
+                await Tone.start();
+                toneStarted = true;
+                }
+        } else {
+            if(!toneStarted) {
+            await Tone.start();
+            toneStarted = true;
+            }
+            if($(controlMain).hasClass("paused")) {
+                Tone.Transport.start();
+            } else {
+                Tone.Transport.stop();
+            }
+        }
+
+        if($(controlMain).hasClass("paused")) {
+            $(controlMain).removeClass("paused");
+            $(controlMain).addClass("playing");
+            if(mobile || isTouch) {
+                $('#controller').css('bottom', '10px');
+            $('.infoPanel').css('top', '-120%');
+            $('.v2Nav').css('top', '-120%');
+            $('#v1header').css('display', 'none');
+            $('#drumpads').css('visibility', 'visible');
+            $('.playBtnPanel').css('bottom', '-120%');
+            } else {
+                $('#controller').css('bottom', '20px');
+            $('.infoPanel').css('top', '-200%');
+            $('#v1header').css('display', 'none');
+            }
+
+            // Tone.Transport.start();
+            $(stems).removeClass("muted");
+            $(stems).addClass("unmuted");
+            $('#muteBtn').removeClass("muted");
+            $('#muteBtn').addClass("unmuted");
+            $('#muteBtn').css("background-image", "url(../images/mute.svg)");
+        } else {
+            $(controlMain).removeClass("playing");
+            $(controlMain).addClass("paused");
+            if(mobile || isTouch) {
+            $('#controller').css('bottom', '-120%');
+            $('.infoPanel').css('top', 0);
+            $('.v2Nav').css('top', 0);
+            $('#v1header').css('display', 'block');
+            $('#drumpads').css('visibility', 'hidden');
+            $('.playBtnPanel').css('bottom', 0);
+            } else {
+            $('#controller').css('bottom', '-200%');
+            $('.infoPanel').css('top', 0);
+            $('#v1header').css('display', 'block');
+            }
+            $(stems).removeClass("unmuted");
+            $(stems).addClass("muted");
+            // Tone.Transport.stop();
+        }
+        
+    };
+
+   $('#controlMain, .PlayBtnPanel').on('click', controlHandler);
+
+    // Stem buttons
+    $(stems).on('click', event => {
+        if($(event.target).hasClass("unmuted")) {
+            $(event.target).removeClass("unmuted");
+            $(event.target).addClass("muted");
+        } else {
+            $(event.target).removeClass("muted");
+            $(event.target).addClass("unmuted");
+            if($("#muteBtn").hasClass("muted")) {
+                $("#muteBtn").removeClass("muted");
+                $("#muteBtn").addClass("unmuted");
+                $("#muteBtn").css("background-image", "url(../images/mute.svg)");
+                }
+        }
+    });
+
+        // Mute buttons
+            $('#muteBtn').on('click', (event) => {
+            if($(event.target).hasClass("unmuted")) {
+                $(event.target).removeClass("unmuted");
+                $(event.target).addClass("muted");
+                $(event.target).css("background-image", "url(../images/unmute.svg)");
+
+                if($(stems).hasClass("unmuted")) {
+                    $(stems).removeClass("unmuted");
+                    $(stems).addClass("muted");
+                }
+            } else {
+                $(event.target).removeClass("muted");
+                $(event.target).addClass("unmuted");
+                $(event.target).css("background-image", "url(../images/mute.svg)");
+                if($(stems).hasClass("muted")) {
+                    $(stems).removeClass("muted");
+                    $(stems).addClass("unmuted");
+                }
+            }
+        });
+
+    ////////// Keys/Pads to Play Sample
+
+    $(document).ready(function() {
+        var keyPlayed = false;
+
+        var fileName = [], pitchString = [];
+        for (var i = 0; i < thesamples.length; i++) {
+                var name = thesamples[i].samplename;
+                var note = thesamples[i].pitch.toUpperCase().replace('M', '#');
+                fileName.push(name);
+                pitchString.push(note);
+        }
+
+        if(mobile || isTouch) {
+            var padToPitch = {};
+        for (var i = 0; i < thepads.length; i++) {
+            var thepad = thepads[i].pad;
+            var note = thepads[i].pitch.toUpperCase().replace('M', '#'); 
+           if(thepads[i].enabled) {
+                padToPitch[thepad] = note;
+            } else {
+                padToPitch[thepad] = null;
+            }
+            }
+        }
+
+        var samplers = [];
+        for( i = 0; i < fileName.length; i++ ) {
+            samplers[i] = new Tone.Sampler({
+            [pitchString[i]]: '../sound/v2/' + username + '/samples/' + fileName[i] + '.mp3'
+            }, {
+                'release' : 1,
+                'onload' : function(){
+                Tone.context.updateInterval = 0;
+                Tone.context.lookAhead = 0;
+                }
+            }).toDestination();
+            samplers[i].context.resume(); // necessary for Safari
+        }
+
+    if(mobile || isTouch) {
+        function touchPad(id){
+            //// Find index# of sample for the pad
+            function theIndex(id) {
+                var i, n, s;
+                for (var ke = 0; ke < thepads.length; ke++) {
+                    if (thepads[ke].pad == id) {
+                        i = ke;
+                        break;
+                    }
+                }
+                n = thepads[i].sample;
+                for (var sa = 0; sa < thesamples.length; sa++) {
+                    if (thesamples[sa].samplename == n) {
+                        s = sa;
+                        break;
+                    } else {
+                        s = 0;
+                    }
+                }
+                return s;
+            }
+            // Do nothing with other pads
+            if (padToPitch[id] == null) {
+            } else {
+            var index = theIndex(id);
+            samplers[index].triggerAttackRelease(padToPitch[id]);
+            }
+            }
+            $('div.pad').on('touchstart', async (event) => {
+                event.preventDefault();
+                if(!toneStarted) {
+                    await Tone.start();
+                    toneStarted = true;
+                }
+                let id = event.target.id;
+                touchPad(id);
+                $('#' + id).css('background-color', '#dddddd44');
+                setTimeout(()=>{
+                    $('#' + id).css('background-color', '#dddddd00');
+                }, 100);
+            });
+        }
+
+        var colorList = [];
+        var colPalette = thepedal.color;
+        var colData;
+        for( let c = 0; c < theAnima[0].colors.length; c++ ) {
+            if (theAnima[0].colors[c].colkey == colPalette) {
+                colData = theAnima[0].colors[c].value;
+                break;
+            }
+        }
+    });
+</script>

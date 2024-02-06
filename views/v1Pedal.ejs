@@ -1,0 +1,785 @@
+<html>
+<head>
+    <!DOCTYPE html>
+    <html>
+    <%- include('./partials/frontHead.ejs')  %> 
+
+    <body>
+    <!-- Play mode mobile-->
+        <div id="tapKeyWrap">
+            <div class="tapKey" id="keyR"></div>
+            <div class="tapKey" id="keyF"></div>
+            <div class="tapKey" id="keyV"></div>
+            <div class="tapKey" id="keyQ"></div>
+            <div class="tapKey" id="keyW"></div>
+            <div class="tapKey" id="keyE"></div>
+            <div class="tapKey" id="keyA"></div>
+            <div class="tapKey" id="keyS"></div>
+            <div class="tapKey" id="keyD"></div>
+            <div class="tapKey" id="keyZ"></div>
+            <div class="tapKey" id="keyX"></div>
+            <div class="tapKey" id="keyC"></div>
+        </div>
+        
+    <!-- ****** Body ****** -->
+        <div class="wrap pedalPageWrap">
+        <%- include('./partials/v1header.ejs')  %> 
+        <div class="title-pedal" id="OnomoPedalHeader"  style="background-color: <%= thepedal.hex %>;">
+            <img src='../images/v1/pedalHeader-ono.svg'>
+            <%= thepedal.onohiragana %> + 
+            <img src='../images/v1/pedalHeader-pedal.svg'>
+            <%= thepedal.name %>
+        </div>
+        <div id="playModeHeader">
+            <div class="pedal-small"> 
+                <img id="pedalSmall" src="../images/pedals/<%= thepedal.nameid %>.png">
+            </div>
+            <div class="title-PlayMode" style="color: <%= thepedal.hex %>;">
+                <%= thepedal.onohiragana %> + <%= thepedal.name %>
+            </div>
+            <div class='clear'></div>
+        </div>
+                
+    <!-- Pedal -->
+        <div id="pedal">
+            <img id="thePedal" src="../images/pedals/<%= thepedal.nameid %>.png">
+
+            <!-- Circular Action Buttons -->
+            <ul id="actions">
+                    <li class='actionBtn playAudio' id="listenBeat">
+                        <img src="../images/v1/playBeat.svg">
+                        <span>Play Track</span>
+                    </li>
+                    <li class='actionBtnMobile playAudio' id="playMode">
+                        <img src="../images/v1/playBeat.svg">
+                        <span>Play Mode</span>
+                    </li>
+                    <li class='actionBtn' id='fullscreenMode'>
+                        <img src="../images/v1/fullscreen.svg">
+                        <span>Full Browser Mode</span>
+                    </li>
+            </ul>
+
+            <!-- Onomonapia Description-->
+            <h3 id="onomoName" style="color: <%= thepedal.hex %>;">
+                <img src='../images/v1/onoName.svg'>
+                <%= thepedal.onomoname %>
+                <img class='playPronBtn' src='../images/v1/speaker.svg'>
+            </h3>
+            <p id="onomoInfo"></p>
+            <h3 id="trackName" style="color: <%= thepedal.hex %>;">
+                <img src='../images/v1/trackName.svg'>
+                    <%- thepedal.tracknameNL %>
+            </h3>
+            <p id="trackInfo"><%- thepedal.trackinfoNL %></p>
+            <h3 id="pedalName" style="color: <%= thepedal.hex %>;">
+                <% if (thepedal.id == 21) {%>
+                    <img src='../images/v1/bunnyName.svg'>
+                <%} else {%>
+                    <img src='../images/v1/pedalName.svg'>
+                <%}%>
+                <%= thepedal.name %>
+            </h3>
+            <p id="pedalInfo"></p>
+            <h3 id="keyh3" style="color: <%= thepedal.hex %>;">Keys to Play</h3>
+            <p id="modalMessage"></p>
+            <img id="keyboard" src="../images/v1/keysOnBoard.svg">
+            </div>
+        </div>
+            
+            <!-- More Pedals -->
+            <div class="morePedalsContainer">
+                <div id="morePedals">
+                    <div id="pedalShelf">
+                        <% for (let p = 0; p < morePedals.length; p++) {%>
+                            <a href="<%=morePedals[p].link%>">
+                            <img class="morePedal" data-pedal-id="<%=morePedals[p].id%>" src="../<%=morePedals[p].image%>" alt="<%=morePedals[p].onomoid%>" />
+                            </a>
+                        <%}%>
+                    </div>
+                </div>
+                <div id="pedalAccordionButton" class="openAccordion" onclick="openCloseAccordion()" >
+                    SEE MORE PEDALS
+                </div>
+            </div>
+        
+            <!-- 'Show-all' button in full browser mode-->
+            <div id="playModeIcons">
+                <div id="showAll" class="actionBtn"><img src="../images/v1/showAll.svg"><span>Back to Pedal</span></div>
+                <div id="pauseMobile" class="actionBtn"><img src="../images/v1/pauseBeat.svg"><span>Pause</span></div>
+                <div id="mobileLogo"><img src="../images/v1/EQD-PB_logo@2x.png"></div>
+            </div>
+    
+            <!-- BG Canvas for Paper.js -->
+            <canvas id="myCanvas" resize></canvas>
+        </div>
+    
+        <!-- <div class="footerContainer"> -->
+            <%- include('./partials/v1footer.ejs')  %> 
+        <!-- </div> -->
+
+        <div class="blackscreen"></div>
+        <div class="loadingSpinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+        <audio id = "music_background" class="display_none"> 
+            <source src="../sound/blank.mp3"/>
+            HTML5 audio not supported
+        </audio>
+
+<script> 
+    $('.blackscreen, .loadingSpinner').show();
+
+    /// IsTouch?
+    function isTouchDevice() {
+            var result = false;
+        if ((/(iPad)/.test(navigator.userAgent)
+        && /WebKit/.test(navigator.userAgent)
+        && !window.MSStream)
+        || (navigator.platform === 'MacIntel'
+        && navigator.maxTouchPoints
+        && navigator.maxTouchPoints === 5)
+        ) {
+            result = true;
+        } else if (window.PointerEvent && ('maxTouchPoints' in navigator)) {
+            // if Pointer Events are supported, just check maxTouchPoints
+            if (navigator.maxTouchPoints > 0) {
+            result = true;
+            } 
+        } else {
+            // no Pointer Events...
+            if (window.matchMedia && window.matchMedia("(any-pointer:coarse)").matches) {
+            // check for any-pointer:coarse which mostly means touchscreen
+            result = true;
+            } else if (window.TouchEvent || ('ontouchstart' in window)) {
+            // last resort - check for exposed touch events API / event handler
+            result = true;
+            } 
+        }
+        return result;
+    }
+    var isTouch = true;
+    let touched = false;
+
+    if ( ( navigator.userAgent.match(/iPhone/i) ) || ( navigator.userAgent.match(/iPad/i) ) ) {
+        
+            $("body").append('<a id="init"></a>')
+                .on( 'touchstart', function() {
+                    if(touched == false) {
+                        soundInit();
+                    }
+                } );
+
+        function soundInit() {
+            var musicBackground = $("#music_background").get(0);
+            musicBackground.play();
+            musicBackground.volume = 0;
+            $("#init").fadeOut(0);
+            musicBackground.srcObj = null;
+            $("body a#init").remove();
+            touched = true;
+        }
+    };
+
+    const pedal = <%- JSON.stringify(thepedal) %> ;
+    const pedalNumber = pedal.id; 
+    const paperD = <%- JSON.stringify(paper) %> ;
+    const allKeys = <%- JSON.stringify(allKeys) %> ;
+    const allV1Pads = <%- JSON.stringify(allPads) %> ;
+    const sampler = <%- JSON.stringify(sampler) %> ;
+    const samplerNumOG = <%- JSON.stringify(samplerNum) %> ;
+    const nav = <%- JSON.stringify(nav) %> ;
+    const mobile =  true;
+
+    const theBeat = new Tone.Player({
+        'url' : pedal.beaturl,
+        'release' : 1,
+        'autostart': false,
+        'loop': true,
+        'onload' : function(){
+        Tone.context.updateInterval = 0;
+        Tone.context.lookAhead = 0;
+        $('.blackscreen, .loadingSpinner').hide();
+        }
+    }).toDestination();
+
+    // Language 
+    if (localStorage.getItem("language") == 'jp') {
+        $('#onomoInfo').html(pedal.onomoDescJP);
+        $('#pedalInfo').html(pedal.pedalinfoJP);
+        $('#aboutPedalBtn').attr('href', pedal.eqdurlJP);
+    } else {
+        $('#onomoInfo').html(pedal.onomoDesc);
+        $('#pedalInfo').html(pedal.pedalinfo);
+        $('#aboutPedalBtn').attr('href', pedal.eqdurl);
+    }
+
+    // Coloring Mobile Drumpads
+    $('#keyQ').css("background-color", paperD.keyColorQ);
+    $('#keyW').css("background-color", paperD.keyColorW);
+    $('#keyE').css("background-color", paperD.keyColorE);
+    $('#keyR').css("background-color", paperD.keyColorR);
+    $('#keyA').css("background-color", paperD.keyColorA);
+    $('#keyS').css("background-color", paperD.keyColorS);
+    $('#keyD').css("background-color", paperD.keyColorD);
+    $('#keyF').css("background-color", paperD.keyColorF);
+    $('#keyZ').css("background-color", paperD.keyColorZ);
+    $('#keyX').css("background-color", paperD.keyColorX);
+    $('#keyC').css("background-color", paperD.keyColorC);
+    $('#keyV').css("background-color", paperD.keyColorV);
+
+    // Paper.js setup
+    paper.install(window);
+        $(document).ready( function() {
+            paper.setup('myCanvas');
+                
+    // Paper color Data
+    const keyData = {
+        q: {color: paperD.keyColorQ},
+        w: {color: paperD.keyColorW},
+        e: {color: paperD.keyColorE},
+        r: {color: paperD.keyColorR},
+        a: {color: paperD.keyColorA},
+        s: {color: paperD.keyColorS},
+        d: {color: paperD.keyColorD},
+        f: {color: paperD.keyColorF},
+        z: {color: paperD.keyColorZ},
+        x: {color: paperD.keyColorX},
+        c: {color: paperD.keyColorC},
+        v: {color: paperD.keyColorV}               
+    };
+
+    // Draw objects with Paper.js
+        var lineCircles = [];
+        var circles = [];
+        var thinLine = [];
+        var onoSvg = [];
+        var waveBlock = [];
+        var point, path;
+        var canvasWidth = window.innerWidth;
+        var canvasHeight = window.innerHeight;
+
+        function squareClickEvent(key) {
+            var randomPointWidth = canvasWidth * Math.random();
+            var randomPointHeight = canvasHeight * Math.random();
+            var randomePoint = new paper.Point(randomPointWidth, randomPointHeight);
+                if (key == 'q' || key == 'd') {
+                    if (pedalNumber == 22) {
+                        var onomatoSvg = new Path(paperD.onoSvgPathThree);
+                        onomatoSvg.strokeColor = keyData[key].color;
+                        onomatoSvg.strokeWidth = 6;
+                        onomatoSvg.position = randomePoint;
+                        lineCircles.push(onomatoSvg);
+                    } else {
+                    var newCircle = new paper.Path.Circle(randomePoint, 4);
+                    newCircle.strokeColor = keyData[key].color;
+                    newCircle.strokeWidth = 6;
+                    lineCircles.push(newCircle);
+                    }
+                } else if (key == 'a' || key == 'v') {
+                    var newCircle = new paper.Path.Circle(randomePoint, 500);
+                    newCircle.fillColor = keyData[key].color;
+                    circles.push(newCircle);
+                } else if (key == 'f' || key == 'x') {
+                    var topLeftPoint = new paper.Point(0, 0);
+                    var topRightPoint = new paper.Point(canvasWidth, 100)
+                    var newRectangle = new paper.Path.Rectangle(topLeftPoint, topRightPoint);
+                    newRectangle.fillColor = keyData[key].color;
+                    thinLine.push(newRectangle);
+                } else if (key == 'r' || key == 's') {
+                    var onomatoSvg = new Path(paperD.onoSvgPathOne);
+                    onomatoSvg.strokeColor = keyData[key].color;
+                    onomatoSvg.strokeWidth = 6;
+                    onomatoSvg.position = randomePoint;
+                    onoSvg.push(onomatoSvg);
+                } else if (key == 'w' || key == 'c') {
+                    var onomatoSvg = new Path(paperD.onoSvgPathTwo);
+                    onomatoSvg.strokeColor = keyData[key].color;
+                    onomatoSvg.strokeWidth = 6;
+                    onomatoSvg.position = randomePoint;
+                    lineCircles.push(onomatoSvg);
+                } else if (key == 'e' || key == 'z') {
+                    var width, height, center;
+                    var points = 12;
+                    var smooth = true;
+                    var path = new Path();
+                    var center = new paper.Point(canvasWidth / 2, canvasHeight / 2);
+                    var width = canvasWidth;
+                    var height = canvasHeight;
+                        path.strokeColor = keyData[key].color;
+                        path.strokeWidth = 4;
+                        path.position.y = center.y;
+                        path.segments = [];
+                        path.add(0, center.y);
+                        for (var i = 1; i < points; i++) {
+                            var point = new paper.Point(width / points * i, height * Math.random());
+                            path.add(point);
+                        }
+                        path.add(canvasWidth , center.y);
+                        path.smooth({ type: 'continuous' });
+                    waveBlock.push(path);
+                    }
+                };
+        function keyDownEvent(key) {
+            var key = (event.key);
+            var randomPointWidth = canvasWidth * Math.random();
+            var randomPointHeight = canvasHeight * Math.random();
+            var randomePoint = new paper.Point(randomPointWidth, randomPointHeight);
+                if (key == 'q' || key == 'd') {
+                    if (pedalNumber == 22) {
+                        var onomatoSvg = new Path(paperD.onoSvgPathThree);
+                        onomatoSvg.strokeColor = keyData[key].color;
+                        onomatoSvg.strokeWidth = 6;
+                        onomatoSvg.position = randomePoint;
+                        lineCircles.push(onomatoSvg);
+                    } else {
+                    var newCircle = new paper.Path.Circle(randomePoint, 4);
+                    newCircle.strokeColor = keyData[key].color;
+                    newCircle.strokeWidth = 6;
+                    lineCircles.push(newCircle);
+                    }
+                } else if (key == 'a' || key == 'v') {
+                    var newCircle = new paper.Path.Circle(randomePoint, 500);
+                    newCircle.fillColor = keyData[key].color;
+                    circles.push(newCircle);
+                } else if (key == 'f' || key == 'x') {
+                    var topLeftPoint = new paper.Point(0, 0);
+                    var topRightPoint = new paper.Point(canvasWidth, 100)
+                    var newRectangle = new paper.Path.Rectangle(topLeftPoint, topRightPoint);
+                    newRectangle.fillColor = keyData[key].color;
+                    thinLine.push(newRectangle);
+                } else if (key == 'r' || key == 's') {
+                    var onomatoSvg = new Path(paperD.onoSvgPathOne);
+                    onomatoSvg.strokeColor = keyData[key].color;
+                    onomatoSvg.strokeWidth = 6;
+                    onomatoSvg.position = randomePoint;
+                    onoSvg.push(onomatoSvg);
+                } else if (key == 'w' || key == 'c') {
+                    var onomatoSvg = new Path(paperD.onoSvgPathTwo);
+                    onomatoSvg.strokeColor = keyData[key].color;
+                    onomatoSvg.strokeWidth = 6;
+                    onomatoSvg.position = randomePoint;
+                    lineCircles.push(onomatoSvg);
+                } else if (key == 'e' || key == 'z') {
+                    var width, height, center;
+                    var points = 12;
+                    var smooth = true;
+                    var path = new Path();
+                    var center = new paper.Point(canvasWidth / 2, canvasHeight / 2);
+                    var width = canvasWidth;
+                    var height = canvasHeight;
+                        path.strokeColor = keyData[key].color;
+                        path.strokeWidth = 4;
+                        path.position.y = center.y;
+                        path.segments = [];
+                        path.add(0, center.y);
+                        for (var i = 1; i < points; i++) {
+                            var point = new paper.Point(width / points * i, height * Math.random());
+                            path.add(point);
+                        }
+                        path.add(canvasWidth , center.y);
+                        path.smooth({ type: 'continuous' });
+                    waveBlock.push(path);
+                }
+            };
+
+        // Draw when square drum pads are tapped
+        var squareIDs = [	"keyQ", "keyW", "keyE", "keyR", "keyA", "keyS", "keyD", "keyF", "keyZ", "keyX", "keyC", "keyV"];
+        var squareToKey = [	"q", "w", "e", "r", "a", "s", "d", "f", "z", "x", "c", "v"];
+        var keyLength = squareToKey.length;
+
+        $('div.tapKey').on('touchstart', (event) => {
+            let id = event.target.id;
+            let index = squareIDs.indexOf(id);
+            squareClickEvent(squareToKey[index]);
+        });
+        
+        // Animation for each object
+        view.onFrame = function(event) {
+            for (var x = 0; x < lineCircles.length; x++) {
+                lineCircles[x].strokeColor.hue += 1;
+                lineCircles[x].scale(1.2);
+                lineCircles[x].opacity -= 0.02;
+                if (lineCircles[x].opacity < 0.1) {
+                    lineCircles[x].remove();
+                    lineCircles.splice(x, 1);
+                }}
+            for (var x = 0; x < circles.length; x++) {
+                circles[x].fillColor.hue += 1;
+                circles[x].scale(0.9);
+                if (circles[x].area < 1) {
+                    circles[x].remove();
+                    circles.splice(x, 1);
+                }}
+            for (var x = 0; x < thinLine.length; x++) {
+                thinLine[x].position.y += 30;
+                thinLine[x].fillColor.hue -= 5;
+                if (thinLine[x].position.y >= canvasHeight) {
+                    thinLine[x].remove();
+                    thinLine.splice(x, 1);
+                }}
+            for (var x = 0; x < onoSvg.length; x++) {
+                onoSvg[x].scale(1.1);
+                onoSvg[x].opacity -= 0.02;
+                if (onoSvg[x].opacity < 0.1) {
+                    onoSvg[x].remove();
+                    onoSvg.splice(x, 1);
+                }}
+            for (var x = 0; x < waveBlock.length; x++) {
+                waveBlock[x].scale(1, 0.9);
+                waveBlock[x].opacity -= 0.01;
+                waveBlock[x].strokeColor.hue += 1;
+                if (waveBlock[x].opacity < 0.1) {
+                    waveBlock[x].remove();
+                    waveBlock.splice(x, 1);
+                }
+            }
+        };
+    });
+
+//// Action buttons
+    if(( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) | (navigator.userAgent.match(/Mac/) && navigator.maxTouchPoints && navigator.maxTouchPoints > 2))
+    {
+        $('#pedalAccordionButton').css({
+            'background-color': pedal.hex
+        });
+    } else {
+    $('#pedalAccordionButton').on('mouseenter',function () {
+        $(this).css({
+        'background-color': pedal.hex,
+        'transition-duration':'300ms'
+        });
+    });
+    $('#pedalAccordionButton').on('mouseleave',function() {
+        $(this).css({
+        'background-color': '#838080'
+        });
+    });
+    }
+
+    $('#download').click(function(e) {
+        e.preventDefault();
+        window.location.href = pedal.sampleurl;
+    });
+
+    // if (isTouch) {
+        $('.actionBtn').css({ 
+            'width': '220px',
+            'background': pedal.hex,
+            'transition-duration':'50ms'
+        });
+        // $('.actionBtn#showall').css({ 
+        //     'width': '80px',
+        //     'background': pedal.hex,
+        //     'transition-duration':'50ms'
+        // });
+        $('span', '.actionBtn').css({
+            'display':'inline'
+        });
+        $('#actions').css({
+            'width': 'min-content',
+            'transition-duration': '50ms'
+        });
+    // } else {
+    //     $('.actionBtn').on('mouseenter',function () { 
+    //     $(this).css({ 
+    //         'width': '220px',
+    //         'background': pedal.hex,
+    //         'transition-duration':'50ms'
+    //     });
+    //     $('span', this).css({
+    //         'display':'inline'
+    //     });
+    //     $('#actions').css({
+    //         'width': '450px',
+    //         'transition-duration': '50ms'
+    //     });
+    //     });
+    //     $('.actionBtn').on('mouseleave',function() {
+    //     $('span', this).css('display','none'),
+    //     $(this).css({
+    //         'width': '50px',
+    //         'background': '#ffffff',
+    //         'transition-duration':'100ms'
+    //     });
+    //     $('#actions').css({
+    //         'width': 'fit-content',
+    //         'transition-duration': '100ms'
+    //     });
+    //     });
+    // }
+        
+
+//// Action functions
+
+    // Play the track
+    function playBeat() {
+            theBeat.context.resume();
+            // CSS change when track is playing
+            if (theBeat.state == "started") {
+                $(".playAudio > img, #pauseMobile > img").attr('src', "../images/v1/pauseBeat.svg");
+                $(".playAudio > span, #pauseMobile > span").html("Pause");
+            } else {
+                $(".playAudio > img, #pauseMobile > img").attr('src', "../images/v1/playBeat.svg");
+                if (!isTouch) {
+                $("#pauseMobile > span, #pauseMobile > span").html("Play Track");
+                }
+            }
+            // Play/Pause button
+            $('.playAudio, #pauseMobile').click(async function() {
+                if(theBeat.loaded == true) {
+                    if (theBeat.state == "started" && !isTouch) {
+                        theBeat.stop();
+                        $(".playAudio > img, #pauseMobile > img").attr('src', "../images/v1/playBeat.svg");
+                        $(".playAudio > span, #pauseMobile > span").html("Play Track");
+                        theBeat.state = "stopped"
+                    } else if (theBeat.state == "started" && isTouch) {
+                        theBeat.stop();
+                        $(".playAudio > img, #pauseMobile > img").attr('src', "../images/v1/playBeat.svg");
+                        $(".playAudio > span, #pauseMobile > span").html("Play Mode");
+                        theBeat.state = "stopped"
+                    } else if (theBeat.state == "stopped" && !isTouch) {
+                        if(!toneStarted) {
+                            await Tone.start();
+                            toneStarted = true;
+                        }
+                        theBeat.start();
+                        theBeat.state = "started"
+                        $(".playAudio > img, #pauseMobile > img").attr('src', "../images/v1/pauseBeat.svg");
+                        $(".playAudio > span, #pauseMobile > span").html("Pause");
+                    } else if (theBeat.state == "stopped" && isTouch) {
+                        if(!toneStarted) {
+                            await Tone.start();
+                            toneStarted = true;
+                        }
+                        theBeat.start();
+                        theBeat.state = "started"
+                        // Mobile Play mode (Full Screen + Beat Play)
+                        if($(window).height() < $(window).width()){
+                            fullScreenLandscape();
+                        } else {
+                            fullScreenStart();
+                        }
+                        //  openFullscreen()
+                        tapKeys(); 
+                        $(".playAudio > img, #pauseMobile > img").attr('src', "../images/v1/pauseBeat.svg");
+                        $(".playAudio > span, #pauseMobile > span").html("Pause");
+                    }
+                } else {
+                    alert('Still loading the track. Please try again.')
+                }
+            });
+            // Stop track when 'Show All' button is clicked on Mobile
+            if (isTouch) {
+                $('#showAll').click(function() {
+                theBeat.stop();
+                $(".playAudio > img").attr('src', "../images/v1/playBeat.svg");
+                $(".playAudio > span").html("Play Mode");
+                });
+            }
+    };
+// Load the track when page is loaded
+    $(document).ready(function() {
+        playBeat();
+    });
+
+// ===== Play Onomato Pronouciation =====
+    function playPron() {
+        const pronAudio = new Tone.Player({
+            'url' : `../sound/v1/pron/pron_${pedal.onomoid}.mp3`,
+            'release' : 1,
+            'autostart': true,
+            'loop': false,
+            'onload' : function(){
+            Tone.context.updateInterval = 0;
+            Tone.context.lookAhead = 0;
+            }
+        }).toDestination();
+        pronAudio.context.resume();
+    };
+
+    $('.playPronBtn').click(async function (){
+    if(!toneStarted) {
+            await Tone.start();
+            toneStarted = true;
+        }
+    playPron();
+    });
+
+// ===== Change hex on Mobile view =====
+    if (isTouch) {
+        $('#playMode, #aboutPedal').css({
+            'background': pedal.hex
+        });     
+        if (($(window).width() < 700)) {
+            $('#showAll, #pauseMobile').css({
+            'width': '50px',
+            });
+        }
+    }
+
+    $(window).on('resize', function() {
+        if (($(window).width() < 700)) {
+            $('#showAll, #pauseMobile').css({
+            'width': '50px',
+            });
+        } else if (($(window).width() < 960) || isTouch) {
+            $('#listenBeat, #aboutPedal').css({
+            'background': pedal.hex
+            });
+        } else {
+            $('#listenBeat, #aboutPedal').css({
+            'background': '#FFFFFF'
+            });
+        }
+    });
+
+    if(isTouch) {
+    $('#playMode, #aboutPedal').css({
+        'width': '220px',
+        'background': pedal.hex,
+        'float': 'none',
+        'margin': '10px auto'
+    });
+    $('#playMode > span, #aboutPedal > span').css({
+        'display': 'inline-block'
+    });
+    $('#playMode > span').html('Play Mode');
+    $('#listenBeat, #download, #fullscreenMode, #keyh3, #modalMessage, #keyboard').css({
+        'display': 'none'
+    });
+    $('#playMode').css({
+        'display': 'block'
+    });
+    }
+
+// ===== Full browser mode =====
+    function fullScreenStart() {
+        $('#pedal, .morePedalsContainer').fadeOut(500);
+        $('footer, .info, .title-small, .title-pedal, .footerLogo, .header').css({
+        'display':'none'
+        });
+        $('#mobileLogo, #showAll, #pauseMobile, #playModeIcons').css({
+        'display':'block'
+        });
+        $('#playModeHeader').css({
+        'display':'flex'
+        });
+        $("body").css("overflow", "hidden");
+    };
+    function fullScreenLandscape() {
+        $('#pedal, .morePedalsContainer').fadeOut(500);
+        $('footer, #playModeHeader, .header, .info, .title-small, .title-pedal, .footerLogo').css({
+        'display':'none'
+        });
+        $('#mobileLogo, #showAll, #pauseMobile, #playModeIcons').css({
+        'display':'block'
+        });
+        $('#tapKeyWrap').css({
+        'grid-template-columns': 'auto auto auto auto',
+        'height' : 'calc(100% - 180px)',
+        'margin' : '80px 20px 20px 20px'
+        });
+        $('.tapKey').css({
+        'margin': '6px'
+        });
+        $('#playModeIcons').css({
+        'top' : '0'
+        });
+        $('#mobileLogo').css({
+        'top': '15px'
+        });
+        $("body").css("overflow", "hidden");
+    };
+    function tapKeys() {
+        $('#tapKeyWrap').css({
+        'display':'grid'
+        });
+    };
+    $('#fullscreenMode').click(function () {
+        fullScreenStart();
+    });
+
+// Back from Full browser mode
+    function fullScreenEnd() {
+        $('#pedal, .morePedalsContainer').fadeIn(300);
+        $('#showAll, #pauseMobile').css({
+        'display': 'none'});
+        $('footer, .info, .title-small, .title-pedal').css({
+            'display':'block'
+        });
+        $('.footerLogo').css({
+        'display':'inline'
+        });
+        $('.header').css({
+            'display':'block'
+        });
+        $('#playModeHeader, #mobileLogo, #showAll, #pauseMobile, #playModeIcons').css({
+        'display':'none'
+        });
+        $('#tapKeyWrap').css({
+        'grid-template-columns': 'auto auto auto',
+        'height' : 'calc(100% - 180px)',
+        'margin' : '80px 20px 100px 20px'
+        });
+        $('.tapKey').css({
+        'margin': '8px'
+        });
+        $('#playModeIcons').css({
+        'bottom' : '0',
+        'top' : 'unset'
+        });
+        $('#mobileLogo').css({
+        'bottom': '15px',
+        'top': 'unset'
+        });
+        $("body").css("overflow", "auto");
+    }
+    function tapKeysEnd() {
+        $('#tapKeyWrap').css({
+        'display':'none'
+        });
+    };
+    $('#showAll').click(function () { 
+        tapKeysEnd(); 
+        fullScreenEnd();
+    });
+
+ /// More Pedals CSS
+    function openCloseAccordion() {
+        if($('#pedalAccordionButton').hasClass('closeAccordion')) {
+            if (($(window).width() < 600)) {
+            $('#morePedals').css({
+                'height':'270px'
+            });
+            } else {
+            $('#morePedals').css({
+                'height':'160px'
+            });
+            }
+            $('#pedalAccordionButton').html('SEE MORE PEDALS');
+            $('#pedalAccordionButton').removeClass('closeAccordion');
+            $('#pedalAccordionButton').addClass('openAccordion');
+        } else {
+            $('#morePedals').css({
+            'height':'auto'
+            });
+            $('#pedalAccordionButton').html('SEE LESS PEDALS');
+            $('#pedalAccordionButton').removeClass('openAccordion');
+            $('#pedalAccordionButton').addClass('closeAccordion');
+            $('html, body').animate({
+            scrollTop: $('#pedalAccordionButton').offset().top
+            }, 1000);
+        }
+    }
+
+//// Language
+    const languageEn = <%- JSON.stringify(language[0]) %> ;
+    const languageJp = <%- JSON.stringify(language[1]) %> ;
+
+    </script>
+
+    <script type="text/javascript" src="../js/iEAlert.js"></script>
+    <script type="text/javascript" src="../js/language.js"></script>
+    <script type="text/javascript" src="../js/v1SamplePlayer.js"></script>
+    </body>
+</html>

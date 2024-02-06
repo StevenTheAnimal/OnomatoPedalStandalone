@@ -1,0 +1,56 @@
+[
+    {
+        "id": 23,
+        "name": "flutter",
+        "video": false,
+        "videourl": "",
+        "onomoname": "Flutter",
+        "pedalname":"Astral Destiny",
+        "artist": "Joseph Minadeo",
+        "cover": "flutter.gif",
+        "links": [
+            {
+            "label": "Astral T",
+            "image": "Astral_T.jpg",
+            "url": "https://eqdmerch.com/onomatopedal-astral-destiny-shirt/"
+            },
+            {
+            "label": "OP Poster",
+            "image": "OP_Poster.jpg",
+            "url": "https://eqdmerch.com/onomatopedal-poster/"
+            },
+            {
+            "label": "Samples",
+            "image": "Download.jpg",
+            "url": "../sound/v2/AstralDemo.zip"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "waaarp",
+        "video": true,
+        "videourl": "Waaarp-VBG",
+        "onomoname": "Waaarp",
+        "pedalname":"Astral Destiny",
+        "artist": "oqlolpo",
+        "cover": "waaarp.gif",
+        "links": [
+            {
+            "label": "Astral T",
+            "image": "Astral_T.jpg",
+            "url": "https://eqdmerch.com/onomatopedal-astral-destiny-shirt/"
+            },
+            {
+            "label": "OP Poster",
+            "image": "OP_Poster.jpg",
+            "url": "https://eqdmerch.com/onomatopedal-poster/"
+            },
+            {
+            "label": "Download Samples",
+            "image": "Download.jpg",
+            "url": "../sound/v2/Waaarp.zip"
+            }
+        ]
+    }
+  ]
