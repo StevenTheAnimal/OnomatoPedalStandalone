@@ -2,14 +2,16 @@
   "name": "op-exhibit-json",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "main.js",
   "engines": {
     "npm": ">=8.1.0",
     "node": ">=16.13.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "Siori Kitajima",
   "license": "ISC",
@@ -23,5 +25,15 @@
     "meta-fetcher": "^3.1.1",
     "method-override": "^3.0.0",
     "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "electron": "^25.3.2",
+    "electron-builder": "^24.6.3"
+  },
+  "build": {
+    "appId": "com.ceilink.akronhistory",
+    "productName": "Akron History",
+    "copyright": "Copyright 2024 Siori Kitajima",
+    "win": {}
   }
 }

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&display=swap');
-
-
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    html {
+      overflow-x: hidden;
+    }
     body{
       /* max-width: 1200px; */
       width: 100%;
@@ -10,6 +14,7 @@
       font-family: 'Raleway', sans-serif;
       background-color: #111111;
       overflow: auto;
+      overflow-x: hidden;
     }
     p, h1, h2, h3, a, ul{
       margin: 0;

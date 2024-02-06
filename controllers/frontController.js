@@ -3,24 +3,29 @@ const fs = require('fs');
 const browser = require('browser-detect');
 const stems = [1, 2, 3, 4];
 const stemKeys = [ 'stem1', 'stem2', 'stem3', 'stem4']
-
-const rawdataV1 = fs.readFileSync('./json/opv1.json');
+//--------------------------------------------
+//use below PATH when testing with "npm start"
+//const PATH = "./";
+//use BELOW PATH when building with "npm run pack"
+const PATH = "resources/app.asar/";
+//--------------------------------------------
+const rawdataV1 = fs.readFileSync(PATH + 'json/opv1.json');
 const opv1 = JSON.parse(rawdataV1);
-const rawdataV2 = fs.readFileSync('./json/opv2.json');
+const rawdataV2 = fs.readFileSync(PATH + 'json/opv2.json');
 const opv2 = JSON.parse(rawdataV2);
-const rawdataOPData = fs.readFileSync('./json/opdata.json');
+const rawdataOPData = fs.readFileSync(PATH + 'json/opdata.json');
 const OpMain = JSON.parse(rawdataOPData);
-const rawdataPedals = fs.readFileSync('./json/eqdPedals.json');
+const rawdataPedals = fs.readFileSync(PATH + 'json/eqdPedals.json');
 const eqdPedals = JSON.parse(rawdataPedals);
-const rawV1PaperData = fs.readFileSync('./json/v1animsound.json');
+const rawV1PaperData = fs.readFileSync(PATH + 'json/v1animsound.json');
 const v1PaperData = JSON.parse(rawV1PaperData);
-const rawEnData = fs.readFileSync('./json/v1language/en.json');
+const rawEnData = fs.readFileSync(PATH + 'json/v1language/en.json');
 const lnEnData = JSON.parse(rawEnData);
-const rawJpData = fs.readFileSync('./json/v1language/jp.json');
+const rawJpData = fs.readFileSync(PATH + 'json/v1language/jp.json');
 const lnJpData = JSON.parse(rawJpData);
-const rawdata = fs.readFileSync('./json/animation.json');
+const rawdata = fs.readFileSync(PATH + 'json/animation.json');
 const animaData = JSON.parse(rawdata);
-const rawDKdata = fs.readFileSync('./json/disabledKeysV1.json');
+const rawDKdata = fs.readFileSync(PATH + 'json/disabledKeysV1.json');
 const disabledKeyData = JSON.parse(rawDKdata);
 
 let language = [], pedalListing = [], v2Names = [];

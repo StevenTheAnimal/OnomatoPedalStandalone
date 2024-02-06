@@ -6,15 +6,23 @@ const methodOverride = require('method-override');
 const frontController = require('./controllers/frontController');
 const bodyParser = require('body-parser').json({limit: '50mb'});
 
+//--------------------------------------------
+//USE "" PATH when testing with "npm start"
+//const PATH = "";
+//use BELOW PATH when building with "npm run pack"
+const PATH = "resources/app.asar/";
+//--------------------------------------------
+
 //////////// Start the server ////////////
 
 app.listen(5550, () => console.log('Omar listening'));
 
 //////////// Middlewears ////////////
-
+app.set('views', PATH + 'views');
+app.use(express.static(PATH + 'public'));
 app.set('trust proxy', 1);
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+//app.use(express.static('public'));
 app.use(express.urlencoded({ limit: "50mb", extended: false }));
 app.use(methodOverride('_method'));
 app.use(bodyParser);
