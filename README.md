@@ -10,9 +10,9 @@ controllers/frontController.js notes:
 app.js notes:
 
 1. USE "" PATH when testing with "npm start"
-  - const PATH = "";
+    - const PATH = "";
 2. use BELOW PATH when building with "npm run pack"
-  - const PATH = "resources/app.asar/";
+    - const PATH = "resources/app.asar/";
 
 
 main.js notes:
